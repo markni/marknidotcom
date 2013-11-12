@@ -1,5 +1,5 @@
-var connect = require('connect');
-connect.createServer(
-    connect.static('./public')
-).listen(8003);
-//TODO: port number should be in config files
+var connect = require("connect");
+
+var app = connect().use(connect.static(__dirname + '/public'));
+
+app.listen(8003);
