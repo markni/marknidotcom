@@ -34,77 +34,6 @@
 
 
 
-@-moz-keyframes flipInX {
-    0% {
-        -moz-transform: perspective(400px) rotateX(90deg);
-        opacity: 0;
-    }
-
-    40% {
-        -moz-transform: perspective(400px) rotateX(-10deg);
-    }
-
-    70% {
-        -moz-transform: perspective(400px) rotateX(10deg);
-    }
-
-    100% {
-        -moz-transform: perspective(400px) rotateX(0deg);
-        opacity: 1;
-    }
-}
-@-o-keyframes flipInX {
-    0% {
-        -o-transform: perspective(400px) rotateX(90deg);
-        opacity: 0;
-    }
-
-    40% {
-        -o-transform: perspective(400px) rotateX(-10deg);
-    }
-
-    70% {
-        -o-transform: perspective(400px) rotateX(10deg);
-    }
-
-    100% {
-        -o-transform: perspective(400px) rotateX(0deg);
-        opacity: 1;
-    }
-}
-@keyframes flipInX {
-    0% {
-        transform: perspective(400px) rotateX(90deg);
-        opacity: 0;
-    }
-
-    40% {
-        transform: perspective(400px) rotateX(-10deg);
-    }
-
-    70% {
-        transform: perspective(400px) rotateX(10deg);
-    }
-
-    100% {
-        transform: perspective(400px) rotateX(0deg);
-        opacity: 1;
-    }
-}
-
-.flipInX {
-    -webkit-backface-visibility: visible !important;
-    -webkit-animation-name: flipInX;
-    -moz-backface-visibility: visible !important;
-    -moz-animation-name: flipInX;
-    -o-backface-visibility: visible !important;
-    -o-animation-name: flipInX;
-    backface-visibility: visible !important;
-    animation-name: flipInX;
-}
-
-
-
 
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
@@ -228,9 +157,7 @@ section#introduction h1{
 
 section#introduction p{
 
-    perspective: 1000;
-    -webkit-perspective: 1000;
-    rotateY(180deg);
+
     line-height: 120%;
     margin: 0;
 }
@@ -238,8 +165,6 @@ section#introduction p{
 section#introduction em{
     display: inline-block;
     -webkit-transition: 0.2s;
-    -webkit-transform-style: preserve-3d;
-
     color: rgba(0,142,215,1);
     font-style:normal;
     cursor: pointer;
@@ -249,7 +174,7 @@ section#introduction em{
 
 section#introduction em:hover{
     color: rgba(0,142,215,0.7);
-    -webkit-transform: rotateX(-40deg);
+
 }
 
 a#logo{
