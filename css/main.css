@@ -97,8 +97,78 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+    background-color:  rgba(244,244,244,1);;
+}
+
+section#introduction{
+
+    -webkit-font-smoothing: antialiased;
+    padding: 90px;
+    color: rgba(0,142,215,0.8);
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+}
+section#introduction h1{
+    font-weight: normal;
+
+    margin: 0;
+    font-size: 60px;
+
+}
 
 
+section#introduction p{
+
+    perspective: 1000;
+    -webkit-perspective: 1000;
+    rotateY(180deg);
+    line-height: 120%;
+    margin: 0;
+}
+
+section#introduction em{
+    display: inline-block;
+    -webkit-transition: 0.2s;
+    -webkit-transform-style: preserve-3d;
+
+    color: rgba(0,142,215,1);
+    font-style:normal;
+    cursor: pointer;
+    position: relative;
+
+}
+
+section#introduction em:hover{
+    color: rgba(0,142,215,0.7);
+    -webkit-transform: rotateX(-40deg);
+}
+
+a#logo{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-size: 40px;
+
+
+    padding: 20px;
+}
+
+
+div#home{
+    width:100%;
+    overflow: hidden;
+    background-color: rgba(204,234,248,1);
+    min-height: 200px;
+}
+
+
+nav#nav-bar{
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+    height: 60px;
+
+}
 
 
 
