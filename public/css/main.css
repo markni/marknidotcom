@@ -256,8 +256,6 @@ a#logo{
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     font-size: 40px;
-
-
     padding: 20px;
 }
 
@@ -266,7 +264,7 @@ div#home{
     width:100%;
     overflow: hidden;
     background-color: rgba(204,234,248,1);
-    min-height: 200px;
+
 }
 
 
@@ -319,7 +317,25 @@ ul#social-links a:hover{
 }
 
 
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
 
+@media only screen and (max-width: 767px) {
+    section#introduction{
+        padding: 20px;
+        font-size: 40px;
+    }
+    section#introduction h1{
+        font-size: 40px;
+
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+
+
+}
 
 
 
