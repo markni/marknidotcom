@@ -1,3 +1,12 @@
+/*angular js preload css*/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+/* css3 animations */
+
+/*tada effect*/
+
 @-webkit-keyframes tada {
     0% {-webkit-transform: scale(1);}
     10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);}
