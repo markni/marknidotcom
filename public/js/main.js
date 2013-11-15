@@ -21,13 +21,20 @@ angular.module('marknidotcom', [])
                 return $window.innerHeight;
             }
 
+            scope.getWinWidth = function() {
+                return $window.innerWidth;
+            }
+
             var setNavHeight = function(newHeight) {
                 element.css('minHeight', newHeight + 'px');
             }
 
             // Set on load
             scope.$watch(scope.getWinHeight, function (newValue, oldValue) {
-                setNavHeight(scope.getWinHeight() - 76-90*2);
+                var padding = scope.getWinWidth() < 768 ? 20:90;
+                var new_height = scope.getWinHeight() - 76-padding*2;
+
+                setNavHeight(new_height);
             }, true);
 
             // Set on resize

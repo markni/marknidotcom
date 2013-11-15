@@ -139,28 +139,11 @@ body{
 }
 
 section#introduction{
-
-    -webkit-font-smoothing: antialiased;
-    padding: 90px;
     color: rgba(0,142,215,0.8);
-    font-family: 'Lato', sans-serif;
-
-}
-section#introduction h1{
-    font-weight: normal;
-
-    margin: 0;
-    font-size: 60px;
-
 }
 
 
-section#introduction p{
-    font-size: 60px;
 
-    line-height: 120%;
-    margin: 0;
-}
 
 section#introduction em{
     display: inline-block;
@@ -252,15 +235,7 @@ ul#social-links a:hover{
 
 
 @media only screen and (max-width: 767px) {
-    section#introduction{
-        padding: 20px;
 
-    }
-
-    section#introduction p{
-        font-size: 40px;
-
-    }
 }
 
 

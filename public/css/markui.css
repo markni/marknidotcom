@@ -1,8 +1,33 @@
-.bigSection{
+.hugeBlock{
     position: relative;
 }
 
+.hugeTextBlock{
+    -webkit-font-smoothing: antialiased;
+    padding: 90px;
+    color: rgba(0,142,215,0.8);
+    font-family: 'Lato', sans-serif;
+
+}
+
+.hugeTextBlock p{
+    font-size: 60px;
+
+    line-height: 120%;
+    margin: 0;
+
+}
+
+.button::-moz-focus-inner {
+    border: 0;
+}
+
+.button:focus{
+    outline:none;
+}
+
 .nextSectionBtn{
+    outline: none;
     font-size: 20px;
     color:white;
     width: 100%;
@@ -16,4 +41,18 @@
 
 .nextSectionBtn i{
     display: block;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .hugeTextBlock{
+        padding: 20px;
+
+    }
+
+    .hugeTextBlock p{
+        font-size: 40px;
+
+    }
 }
