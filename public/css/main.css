@@ -172,6 +172,22 @@ section#introduction em:hover{
 
 section#experience {
     background-color: white;
+
+
+}
+
+
+section#experience p{
+    opacity: 0;
+    -webkit-transition: all 1100ms linear;
+    -moz-transition: all 1100ms linear;
+    -o-transition: all 1100ms linear;
+    -ms-transition: all 1100ms linear;
+    transition: all 1100ms linear;
+}
+
+section#experience.animated  p {
+    opacity: 1;
 }
 
 a#logo{
