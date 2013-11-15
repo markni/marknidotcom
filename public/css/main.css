@@ -144,7 +144,7 @@ section#introduction{
     padding: 90px;
     color: rgba(0,142,215,0.8);
     font-family: 'Lato', sans-serif;
-    font-size: 60px;
+
 }
 section#introduction h1{
     font-weight: normal;
@@ -156,7 +156,7 @@ section#introduction h1{
 
 
 section#introduction p{
-
+    font-size: 60px;
 
     line-height: 120%;
     margin: 0;
@@ -175,6 +175,12 @@ section#introduction em{
 section#introduction em:hover{
     color: rgba(0,142,215,0.7);
 
+}
+
+
+section#experience {
+    min-height: 500px;
+    background-color: white;
 }
 
 a#logo{
@@ -242,26 +248,20 @@ ul#social-links a:hover{
 }
 
 
-@media only screen and (min-width: 768px) {
-    /* tablets and desktop */
-}
+
+
 
 @media only screen and (max-width: 767px) {
     section#introduction{
         padding: 20px;
-        font-size: 40px;
+
     }
-    section#introduction h1{
+
+    section#introduction p{
         font-size: 40px;
 
     }
 }
-
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-
-
-}
-
 
 
 

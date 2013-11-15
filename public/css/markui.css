@@ -1,0 +1,19 @@
+.bigSection{
+    position: relative;
+}
+
+.nextSectionBtn{
+    font-size: 20px;
+    color:white;
+    width: 100%;
+    bottom:10px;
+    left:0;
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nextSectionBtn i{
+    display: block;
+}
