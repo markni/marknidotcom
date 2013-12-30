@@ -8,11 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-        <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/markui.css">
-        <link rel="stylesheet" href="css/main.css">
+
+		<link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -20,22 +20,9 @@
     </head>
     <body>
 
-    <div class="loading">
-        <div class="loading_progress fake">
-            <div class="loading_shadow"></div>
-        </div>
-    </div>
-
     <div id="home" ng-cloak class="ng-cloak" ng-controller="homeCtrl">
 
-        <nav class="clearfix">
-            <ul id="social-links">
-                <li><a href="https://github.com/xna2" title="github" alt="github" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
 
-                <li><a href="http://ca.linkedin.com/pub/mark-ni/25/b69/a02/" title="linkedin" alt="linkedin" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
-                <li><a href="mailto:xixian.ni@gmail.com" title="email" alt="email"><i class="fa fa-envelope fa-fw"></i></a></li>
-            </ul>
-        </nav>
 
         <section class="hugeBlock hugeTextBlock" autoheight id="introduction">
         <p>Hello there, my name is <em>Mark</em>. </p>
@@ -44,7 +31,7 @@
             {{lastjobdate}}, I worked for <em>IBM</em> on their latest web project.</p>
 
 
-        <a href="#experience"  class="nextSectionBtn button" ng-click="goToNextSection()">  SEE WHAT I HAVE WORKED ON
+        <a class="nextSectionBtn link" ng-click="goToNextSection()">  SEE WHAT I HAVE WORKED ON
             <i class="fa fa-angle-double-down"></i>
         </a>
 
@@ -57,16 +44,27 @@
 
             <p>Please come back later!</p>
 
-
-
         </section>
+
+		<nav class="footer">
+			<ul id="social-links">
+				<li><a href="https://github.com/xna2" title="github" alt="github" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+
+				<li><a href="http://ca.linkedin.com/pub/mark-ni/25/b69/a02/" title="linkedin" alt="linkedin" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+				<li><a href="mailto:xixian.ni@gmail.com" title="email" alt="email"><i class="fa fa-envelope fa-fw"></i></a></li>
+			</ul>
+		</nav>
 
     </div>
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
-        <script src="js/funcs.js"></script>
-        <script src="js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
+        <script src="js/factory.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="js/directive.js"></script>
+
+
 
 
     </body>
