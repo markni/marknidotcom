@@ -1,18 +1,16 @@
-
-
-.hugeBlock{
+.hugeBlock {
     position: relative;
 }
 
-.hugeTextBlock{
+.hugeTextBlock {
     -webkit-font-smoothing: antialiased;
     padding: 90px;
-    color: rgba(0,142,215,0.8);
+    color: rgba(0, 142, 215, 0.8);
     font-family: 'Lato', sans-serif;
 
 }
 
-.hugeTextBlock p{
+.hugeTextBlock p {
     font-size: 60px;
 
     line-height: 120%;
@@ -24,17 +22,17 @@
     border: 0;
 }
 
-.button:focus{
-    outline:none;
+.button:focus {
+    outline: none;
 }
 
-.nextSectionBtn{
+.nextSectionBtn {
     outline: none;
     font-size: 20px;
-    color:white;
+    color: white;
     width: 100%;
-    bottom:10px;
-    left:0;
+    bottom: 10px;
+    left: 0;
     position: absolute;
     display: block;
     text-decoration: none;
@@ -48,24 +46,85 @@
 }
 
 .nextSectionBtn:hover {
-    color: rgba(0,142,215,0.8);
+    color: rgba(0, 142, 215, 0.8);
 }
 
-.nextSectionBtn i{
+.nextSectionBtn i {
     display: block;
 }
 
-
-
 @media only screen and (max-width: 767px) {
-    .hugeTextBlock{
+    .hugeTextBlock {
         padding: 20px;
 
     }
 
-    .hugeTextBlock p{
-        font-size:
-            30px;
+    .hugeTextBlock p {
+        font-size: 30px;
 
     }
+}
+
+
+
+
+@-webkit-keyframes loading {
+    0% {width:0%}
+    100% {width:100%}
+}
+
+@-moz-keyframes loading {
+    0% {width:0%}
+    100% {width:100%}
+}
+
+@-o-keyframes loading {
+    0% {width:0%}
+    100% {width:100%}
+}
+
+@keyframes loading {
+    0% {width:0%}
+    100% {width:100%}
+}
+
+
+.loading {
+    background-color: rgba(0,0,0,0.7);
+    width: 33%;
+    margin: 50px auto;
+}
+
+.loading_progress {
+    position: relative;
+    width: 0%;
+    background-color: red;
+    height: 5px;
+
+    -webkit-animation:loading 2s forwards;
+    -moz-animation: loading 2s forwards;
+    animation: loading 2s forwards;
+}
+
+.loading_shadow {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 75px;
+    left: 35px;
+    transform: skew(45deg);
+    -ms-transform: skew(45deg); /* IE 9 */
+    -webkit-transform: skew(45deg);
+
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden; /* Chrome and Safari */
+    -moz-backface-visibility:hidden; /* Firefox */
+    -ms-backface-visibility:hidden; /* Internet Explorer */
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.05)), color-stop(100%,rgba(252,252,252,0)));
+    background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.05) 0%, rgba(252,252,252,0) 100%);
+    background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.05) 0%, rgba(252,252,252,0) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.05) 0%, rgba(252,252,252,0) 100%);
+    background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.05) 0%, rgba(252,252,252,0) 100%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(252,252,252,0) 100%);
 }

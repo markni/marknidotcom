@@ -58,7 +58,7 @@ angular.module('marknidotcom', [])
                 console.log(attrs.href);
                 if (attrs.ngClick || attrs.href === '' || (attrs.href && attrs.href.charAt(0) === '#')) {
                     elem.on('click', function (e) {
-                        history.pushState(null, null, attrs.href);
+                        history.pushState(null, attrs.href , attrs.href);
                         e.preventDefault();
                     });
                 }
