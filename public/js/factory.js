@@ -16,13 +16,13 @@ markni.scrollTo = function(element, to, duration) {
         }
     };
     animateScroll();
-}
+};
 
 markni.stopAnimations = function(){
     for (var i=0; i<markni.timeouts.length; i++) {
         clearTimeout(markni.timeouts[i]);
     }
-}
+};
 
 
 

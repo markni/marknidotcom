@@ -1,71 +1,225 @@
 <!DOCTYPE html>
 <html ng-app="marknidotcom">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Markni</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Markni</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-		<link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
-
-
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
 
 
-    </head>
-    <body>
-
-    <div id="home" ng-cloak class="ng-cloak" ng-controller="homeCtrl">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
 
+</head>
+<body>
 
-        <section class="hugeBlock hugeTextBlock" autoheight id="introduction">
-        <p>Hello there, my name is <em>Mark</em>. </p>
-        <p>I'm a <em>web</em> developer.
-           I love coding in <em>JavaScript</em>.
-            {{lastjobdate}}, I worked for <em>IBM</em> on their latest web project.</p>
+<div id="home" ng-cloak class="ng-cloak" ng-controller="homeCtrl">
 
 
-        <a class="nextSectionBtn link" ng-click="goToNextSection()">  SEE WHAT I HAVE WORKED ON
-            <i class="fa fa-angle-double-down"></i>
-        </a>
+	<section class="hugeBlock hugeTextBlock" autoheight id="introduction">
+		<p>Hello there, my name is <em>Mark</em>. </p>
 
-        </section>
-
-
-        <section scroll  id="experience" class="hugeBlock hugeTextBlock">
-
-            <p>Opps, this site is still under construction.</p>
-
-            <p>Please come back later!</p>
-
-        </section>
-
-		<nav class="footer">
-			<ul id="social-links">
-				<li><a href="https://github.com/xna2" title="github" alt="github" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
-
-				<li><a href="http://ca.linkedin.com/pub/mark-ni/25/b69/a02/" title="linkedin" alt="linkedin" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
-				<li><a href="mailto:xixian.ni@gmail.com" title="email" alt="email"><i class="fa fa-envelope fa-fw"></i></a></li>
-			</ul>
-		</nav>
-
-    </div>
+		<p>I'm a <em>web</em> developer.
+			I love coding in <em>JavaScript</em>.
+			{{lastjobdate}}, I worked for <em>IBM</em> on their latest web project.</p>
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
-        <script src="js/factory.js"></script>
-		<script src="js/main.js"></script>
-		<script src="js/controller.js"></script>
-		<script src="js/directive.js"></script>
+		<div class="nextSectionBtn link" ng-click="goToNextSection()"> SCROLL TO FIND OUT MORE
+			<i class="fa fa-angle-double-down"></i>
+		</div>
+
+	</section>
 
 
 
 
-    </body>
+	<section id="experience" class="hugeBlock">
+		<h2 class="text-center">Work & Education</h2>
+		<ul class="job-list">
+			<li scroll class="row job-entry">
+				<div class="col-sm-8 col-sm-offset-2 col-xs-12">
+					<div class="col-sm-2 hidden-xs job-duration text-right"><span
+							class="period">2010.1 - 2010.8</span><span class="months">8 months</span></div>
+					<div class="col-sm-10 job-describ">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<h4>Lorem ipsum dolor sit amet</h4>
+
+						<p class=" visible-xs job-duration text-center">2010.1 - 2010.8</p>
+
+						<p class="clearfix">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo id massa cursus
+							pretium. Fusce euismod libero turpis, ut eleifend velit fringilla eget. In hac habitasse
+							platea dictumst. Nulla ultricies mattis sodales. Proin non vehicula enim. Aliquam consequat
+							dignissim nibh porta euismod. Vivamus in consequat elit. Duis ac orci tortor. Mauris eu
+							interdum sapien. Aenean sit amet pulvinar massa. Nunc et tristique felis. Curabitur non quam
+							augue. Vestibulum eu ultrices est. Integer ac viverra sapien, nec interdum libero.
+							Suspendisse consequat, leo eget vehicula semper, erat lorem laoreet nulla, a malesuada erat
+							eros sodales velit.
+						</p>
+
+					</div>
+				</div>
+
+			</li>
+			<li scroll class="row job-entry">
+				<div class="col-sm-8 col-sm-offset-2 col-xs-12">
+					<div class="col-sm-2 hidden-xs job-duration text-right"><span
+							class="period">2010.1 - 2010.8</span><span class="months">8 months</span></div>
+					<div class="col-sm-10 job-describ">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<h4>Lorem ipsum dolor sit amet</h4>
+
+						<p class=" visible-xs job-duration text-center">2010.1 - 2010.8</p>
+
+						<p class="clearfix">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo id massa cursus
+							pretium. Fusce euismod libero turpis, ut eleifend velit fringilla eget. In hac habitasse
+							platea dictumst. Nulla ultricies mattis sodales. Proin non vehicula enim. Aliquam consequat
+							dignissim nibh porta euismod. Vivamus in consequat elit. Duis ac orci tortor. Mauris eu
+							interdum sapien. Aenean sit amet pulvinar massa. Nunc et tristique felis. Curabitur non quam
+							augue. Vestibulum eu ultrices est. Integer ac viverra sapien, nec interdum libero.
+							Suspendisse consequat, leo eget vehicula semper, erat lorem laoreet nulla, a malesuada erat
+							eros sodales velit.
+						</p>
+
+					</div>
+				</div>
+
+			</li>
+			<li scroll class="row job-entry">
+				<div class="col-sm-8 col-sm-offset-2 col-xs-12">
+					<div class="col-sm-2 hidden-xs job-duration text-right"><span
+							class="period">2010.1 - 2010.8</span><span class="months">8 months</span></div>
+					<div class="col-sm-10 job-describ">
+						<h3>Lorem ipsum dolor sit amet</h3>
+						<h4>Lorem ipsum dolor sit amet</h4>
+
+						<p class=" visible-xs job-duration text-center">2010.1 - 2010.8</p>
+
+						<p class="clearfix">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo id massa cursus
+							pretium. Fusce euismod libero turpis, ut eleifend velit fringilla eget. In hac habitasse
+							platea dictumst. Nulla ultricies mattis sodales. Proin non vehicula enim. Aliquam consequat
+							dignissim nibh porta euismod. Vivamus in consequat elit. Duis ac orci tortor. Mauris eu
+							interdum sapien. Aenean sit amet pulvinar massa. Nunc et tristique felis. Curabitur non quam
+							augue. Vestibulum eu ultrices est. Integer ac viverra sapien, nec interdum libero.
+							Suspendisse consequat, leo eget vehicula semper, erat lorem laoreet nulla, a malesuada erat
+							eros sodales velit.
+						</p>
+
+					</div>
+				</div>
+
+			</li>
+
+
+		</ul>
+
+
+	</section>
+
+	<section scroll id="projects">
+		<h2 class="text-center">Projects</h2>
+
+
+		<div class="row project-entry">
+			<div class="col-sm-8 col-sm-offset-2 col-xs-12">
+				<div class="col-lg-4 col-md-5">
+					<h3>Intouch</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo id massa cursus
+						pretium. Fusce euismod libero turpis, ut eleifend velit fringilla eget. In hac habitasse
+						platea dictumst. Nulla ultricies mattis sodales. Proin non vehicula enim. Aliquam consequat
+						dignissim nibh porta euismod. Vivamus in consequat elit. Duis ac orci tortor. Mauris eu
+						interdum sapien. Aenean sit amet pulvinar massa. Nunc et tristique felis. Curabitur non quam
+						augue. Vestibulum eu ultrices est. Integer ac viverra sapien, nec interdum libero.
+						Suspendisse consequat, leo eget vehicula semper, erat lorem laoreet nulla, a malesuada erat
+						eros sodales velit.
+					</p>
+					<div class="ex-links">
+						<div class="ex-link"><a>Launch App</a></div>
+						<div class="ex-link"><a>Github</a></div>
+					</div>
+				</div>
+
+				<div scroll class="col-lg-8 col-md-7" id="intouch-art">
+					<img src="/img/intouch-iphone5.png" style="width:100%" />
+
+				</div>
+
+			</div>
+		</div>
+		<div class="row project-entry">
+			<div class="col-sm-8 col-sm-offset-2 col-xs-12">
+				<div class="col-lg-4 col-md-5">
+					<h3>Engage</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo id massa cursus
+						pretium. Fusce euismod libero turpis, ut eleifend velit fringilla eget. In hac habitasse
+						platea dictumst. Nulla ultricies mattis sodales. Proin non vehicula enim. Aliquam consequat
+						dignissim nibh porta euismod. Vivamus in consequat elit. Duis ac orci tortor. Mauris eu
+						interdum sapien. Aenean sit amet pulvinar massa. Nunc et tristique felis. Curabitur non quam
+						augue. Vestibulum eu ultrices est. Integer ac viverra sapien, nec interdum libero.
+						Suspendisse consequat, leo eget vehicula semper, erat lorem laoreet nulla, a malesuada erat
+						eros sodales velit.
+					</p>
+					<div><a class="btn"></a></div>
+					<h3>Intouch</h3>
+				</div>
+
+				<div class="col-lg-8 col-md-7" id="intouch-art">
+					<img src="/img/intouch-iphone5.png" style="width:100%" />
+
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+
+	<section scroll id="design">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo id massa cursus
+			pretium. Fusce euismod libero turpis, ut eleifend velit fringilla eget. In hac habitasse
+			platea dictumst. Nulla ultricies mattis sodales. Proin non vehicula enim. Aliquam consequat
+			dignissim nibh porta euismod. Vivamus in consequat elit. Duis ac orci tortor. Mauris eu
+			interdum sapien. Aenean sit amet pulvinar massa. Nunc et tristique felis. Curabitur non quam
+			augue. Vestibulum eu ultrices est. Integer ac viverra sapien, nec interdum libero.
+			Suspendisse consequat, leo eget vehicula semper, erat lorem laoreet nulla, a malesuada erat
+			eros sodales velit.
+		</p>
+	</section>
+
+
+	<nav class="footer">
+		<ul id="social-links">
+			<li><a href="https://github.com/xna2" title="github" alt="github" target="_blank"><i
+					class="fa fa-github fa-fw"></i></a></li>
+
+			<li><a href="http://ca.linkedin.com/pub/mark-ni/25/b69/a02/" title="linkedin" alt="linkedin"
+				   target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+			<li><a href="mailto:xixian.ni@gmail.com" title="email" alt="email"><i class="fa fa-envelope fa-fw"></i></a>
+			</li>
+		</ul>
+	</nav>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
+<script src="js/factory.js"></script>
+<script src="js/main.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/directive.js"></script>
+
+
+</body>
 </html>

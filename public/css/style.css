@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 /*angular js preload css*/
-/* line 15, style.scss */
+/* line 14, style.scss */
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
@@ -8,180 +8,320 @@
 /* css3 animations */
 /*tada effect*/
 @-webkit-keyframes tada {
-  /* line 24, style.scss */
+  /* line 23, style.scss */
   0% {
     -webkit-transform: scale(1);
   }
 
-  /* line 27, style.scss */
+  /* line 26, style.scss */
   10%, 20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
   }
 
-  /* line 30, style.scss */
+  /* line 29, style.scss */
   30%, 50%, 70%, 90% {
     -webkit-transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 33, style.scss */
+  /* line 32, style.scss */
   40%, 60%, 80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 36, style.scss */
+  /* line 35, style.scss */
   100% {
     -webkit-transform: scale(1) rotate(0);
   }
 }
 
 @-moz-keyframes tada {
-  /* line 24, style.scss */
+  /* line 23, style.scss */
   0% {
     -webkit-transform: scale(1);
   }
 
-  /* line 27, style.scss */
+  /* line 26, style.scss */
   10%, 20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
   }
 
-  /* line 30, style.scss */
+  /* line 29, style.scss */
   30%, 50%, 70%, 90% {
     -webkit-transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 33, style.scss */
+  /* line 32, style.scss */
   40%, 60%, 80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 36, style.scss */
+  /* line 35, style.scss */
   100% {
     -webkit-transform: scale(1) rotate(0);
   }
 }
 
 @-o-keyframes tada {
-  /* line 24, style.scss */
+  /* line 23, style.scss */
   0% {
     -webkit-transform: scale(1);
   }
 
-  /* line 27, style.scss */
+  /* line 26, style.scss */
   10%, 20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
   }
 
-  /* line 30, style.scss */
+  /* line 29, style.scss */
   30%, 50%, 70%, 90% {
     -webkit-transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 33, style.scss */
+  /* line 32, style.scss */
   40%, 60%, 80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 36, style.scss */
+  /* line 35, style.scss */
   100% {
     -webkit-transform: scale(1) rotate(0);
   }
 }
 
 @keyframes tada {
-  /* line 24, style.scss */
+  /* line 23, style.scss */
   0% {
     -webkit-transform: scale(1);
   }
 
-  /* line 27, style.scss */
+  /* line 26, style.scss */
   10%, 20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
   }
 
-  /* line 30, style.scss */
+  /* line 29, style.scss */
   30%, 50%, 70%, 90% {
     -webkit-transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 33, style.scss */
+  /* line 32, style.scss */
   40%, 60%, 80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 36, style.scss */
+  /* line 35, style.scss */
   100% {
     -webkit-transform: scale(1) rotate(0);
   }
 }
 
-/* line 41, style.scss */
+/* line 40, style.scss */
 body {
   background-color: #ea693f;
+  min-width: 320px;
 }
 
-/* line 44, style.scss */
+/* line 45, style.scss */
 div#home {
   width: 100%;
   overflow: hidden;
-  background-color: #ea693f;
 }
 
 /* line 51, style.scss */
+.ex-links {
+  margin-top: 20px;
+}
+
+/* line 55, style.scss */
+.ex-link {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+/* line 60, style.scss */
+.ex-link a {
+  -webkit-transition: color 500ms;
+  -moz-transition: color 500ms;
+  -o-transition: color 500ms;
+  transition: color 500ms;
+  color: #ea693f;
+  font-weight: 300;
+  font-size: 15px;
+  border: 1px solid;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0 5px;
+  text-decoration: none;
+}
+/* line 72, style.scss */
+.ex-link a:active {
+  text-decoration: none;
+  color: #505050;
+  -webkit-animation: tada 1s forwards;
+  -moz-animation: tada 1s forwards;
+  -o-animation: tada 1s forwards;
+  animation: tada 1s forwards;
+}
+/* line 77, style.scss */
+.ex-link a:hover {
+  text-decoration: none;
+  color: #505050;
+}
+
+/* line 87, style.scss */
+section {
+  padding: 40px 0;
+}
+/* line 90, style.scss */
+section h3 {
+  padding-top: 0;
+  margin-top: 0;
+}
+/* line 94, style.scss */
+section h2 {
+  font-weight: 300;
+}
+/* line 98, style.scss */
 section#introduction {
   color: #ebecdd;
 }
-/* line 54, style.scss */
+/* line 101, style.scss */
 section#introduction em {
   display: inline-block;
-  -webkit-transition: 0.2s;
+  -webkit-transition: color 200ms;
+  -moz-transition: color 200ms;
+  -o-transition: color 200ms;
+  transition: color 200ms;
   color: white;
   font-style: normal;
   cursor: pointer;
   position: relative;
 }
-/* line 61, style.scss */
+/* line 108, style.scss */
 section#introduction em:hover {
   color: #505050;
 }
-/* line 66, style.scss */
-section#experience {
-  background-color: #ebecdd;
+/* line 113, style.scss */
+section#design {
+  background-color: #505050;
 }
-/* line 68, style.scss */
-section#experience p {
+/* line 117, style.scss */
+section#projects {
+  box-shadow: 0px -3px 9px rgba(80, 80, 80, 0.1);
+  background-color: #f4f4f4;
+  margin-top: -10px;
+}
+/* line 121, style.scss */
+section#projects .project-entry {
+  padding: 40px 0;
+}
+/* line 125, style.scss */
+section#projects h2 {
+  margin-bottom: 20px;
+}
+/* line 130, style.scss */
+section#projects h3 {
+  font-weight: 300;
+  font-size: 30px;
+}
+/* line 138, style.scss */
+section#projects #intouch-art {
   opacity: 0;
-  -webkit-transition: all 1100ms linear;
-  -moz-transition: all 1100ms linear;
-  -o-transition: all 1100ms linear;
-  -ms-transition: all 1100ms linear;
-  transition: all 1100ms linear;
+  -webkit-transition: opacity 1000ms;
+  -moz-transition: opacity 1000ms;
+  -o-transition: opacity 1000ms;
+  transition: opacity 1000ms;
+  background-image: url("/img/intouch-iphone5.png");
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: 50% 0;
 }
-/* line 76, style.scss */
-section#experience.animated p {
+/* line 141, style.scss */
+section#projects #intouch-art img {
+  opacity: 0;
+}
+/* line 150, style.scss */
+section#projects #intouch-art.animated {
   opacity: 1;
 }
+/* line 155, style.scss */
+section#experience {
+  box-shadow: 0px -3px 9px rgba(80, 80, 80, 0.1);
+  background-color: #ebecdd;
+}
+/* line 158, style.scss */
+section#experience .job-entry {
+  margin-top: 20px;
+}
+/* line 160, style.scss */
+section#experience .job-entry .months {
+  display: none;
+}
+/* line 164, style.scss */
+section#experience .job-entry.animated p {
+  opacity: 1;
+}
+/* line 169, style.scss */
+section#experience .job-entry:hover .period {
+  display: none;
+}
+/* line 172, style.scss */
+section#experience .job-entry:hover .months {
+  display: inline;
+}
+/* line 178, style.scss */
+section#experience ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 182, style.scss */
+section#experience .job-list {
+  margin-top: 40px;
+}
+/* line 185, style.scss */
+section#experience .job-duration {
+  background-color: #ea693f;
+  color: white;
+  margin-top: 5px;
+}
+/* line 191, style.scss */
+section#experience .job-describ {
+  color: #505050;
+}
+/* line 195, style.scss */
+section#experience h2 {
+  font-weight: 300;
+  color: #505050;
+}
+/* line 200, style.scss */
+section#experience p {
+  opacity: 0;
+  -webkit-transition: all 1000ms;
+  -moz-transition: all 1000ms;
+  -o-transition: all 1000ms;
+  transition: all 1000ms;
+}
 
-/* line 82, style.scss */
+/* line 209, style.scss */
 a#logo {
   text-decoration: none;
   font-size: 40px;
   padding: 20px;
 }
 
-/* line 91, style.scss */
+/* line 216, style.scss */
 .footer {
   background-color: #505050;
   min-height: 50px;
 }
 
-/* line 96, style.scss */
+/* line 222, style.scss */
 ul#social-links {
   float: right;
   list-style: none;
   margin-right: 5px;
 }
-/* line 101, style.scss */
+/* line 227, style.scss */
 ul#social-links li {
   cursor: pointer;
   float: left;
@@ -194,30 +334,30 @@ ul#social-links li {
   -o-transition: all 300ms;
   transition: all 300ms;
 }
-/* line 109, style.scss */
+/* line 235, style.scss */
 ul#social-links li:hover {
   -webkit-animation: tada 1s forwards;
   -moz-animation: tada 1s forwards;
   -o-animation: tada 1s forwards;
   animation: tada 1s forwards;
 }
-/* line 113, style.scss */
+/* line 239, style.scss */
 ul#social-links a {
   color: white;
 }
 
-/* line 119, style.scss */
+/* line 245, style.scss */
 .hugeBlock {
   position: relative;
 }
 
-/* line 123, style.scss */
+/* line 249, style.scss */
 .hugeTextBlock {
   -webkit-font-smoothing: antialiased;
   padding: 90px;
   color: white;
 }
-/* line 128, style.scss */
+/* line 254, style.scss */
 .hugeTextBlock p {
   font-size: 60px;
   font-weight: 300;
@@ -225,25 +365,26 @@ ul#social-links a {
   margin: 0;
 }
 
-/* line 138, style.scss */
+/* line 263, style.scss */
 a.link {
   cursor: pointer;
 }
-/* line 141, style.scss */
+/* line 266, style.scss */
 a.link::-moz-focus-inner {
   border: 0;
 }
-/* line 144, style.scss */
+/* line 269, style.scss */
 a.link:hover {
   text-decoration: none;
 }
-/* line 147, style.scss */
+/* line 272, style.scss */
 a.link:focus {
   outline: none;
 }
 
-/* line 152, style.scss */
+/* line 277, style.scss */
 .nextSectionBtn {
+  cursor: pointer;
   font-weight: 300;
   outline: none;
   font-size: 20px;
@@ -260,22 +401,27 @@ a.link:focus {
   -o-transition: all 300ms;
   transition: all 300ms;
 }
-/* line 165, style.scss */
+/* line 291, style.scss */
 .nextSectionBtn:hover {
-  color: #ebecdd;
+  color: #505050;
 }
-/* line 168, style.scss */
+/* line 295, style.scss */
 .nextSectionBtn i {
   display: block;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 174, style.scss */
+  /* line 303, style.scss */
   .hugeTextBlock {
     padding: 20px;
   }
-  /* line 176, style.scss */
+  /* line 305, style.scss */
   .hugeTextBlock p {
     font-size: 30px;
+  }
+
+  /* line 312, style.scss */
+  section#projects #intouch-art {
+    margin-top: -10px;
   }
 }

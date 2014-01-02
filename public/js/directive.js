@@ -2,20 +2,20 @@ app.directive('autoheight', function ($window) {
 	return function (scope, element) {
 		scope.getWinHeight = function () {
 			return $window.innerHeight;
-		}
+		};
 
 		scope.getWinWidth = function () {
 			return $window.innerWidth;
-		}
+		};
 
 		var getNewHeight = function () {
 			var new_height = scope.getWinHeight();
 			return new_height;
-		}
+		};
 
 		var setNavHeight = function (newHeight) {
 			element.css('minHeight', newHeight + 'px');
-		}
+		};
 
 		// Set on load
 		scope.$watch(scope.getWinHeight, function (newValue, oldValue) {
@@ -31,7 +31,7 @@ app.directive('autoheight', function ($window) {
 			scope.$apply();
 		});
 	};
-})
+});
 
 //modify all the a tags that if href is #xxxxx, prevent default and manually push a history state
 app.directive('a', function () {
@@ -47,7 +47,7 @@ app.directive('a', function () {
 			}
 		}
 	};
-})
+});
 
 app.directive("scroll", function ($window) {
 	return function (scope, element, attrs) {
