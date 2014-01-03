@@ -423,10 +423,11 @@ ul#social-links {
   margin-left: auto;
   margin-right: auto;
   height: 50px;
-  width: 200px;
+  width: 120px;
   list-style: none;
+  padding: 0;
 }
-/* line 321, style.scss */
+/* line 322, style.scss */
 ul#social-links li {
   cursor: pointer;
   float: left;
@@ -439,30 +440,30 @@ ul#social-links li {
   -o-transition: all 300ms;
   transition: all 300ms;
 }
-/* line 329, style.scss */
+/* line 330, style.scss */
 ul#social-links li:hover {
   -webkit-animation: tada 1s forwards;
   -moz-animation: tada 1s forwards;
   -o-animation: tada 1s forwards;
   animation: tada 1s forwards;
 }
-/* line 333, style.scss */
+/* line 334, style.scss */
 ul#social-links a {
   color: white;
 }
 
-/* line 339, style.scss */
+/* line 340, style.scss */
 .hugeBlock {
   position: relative;
 }
 
-/* line 343, style.scss */
+/* line 344, style.scss */
 .hugeTextBlock {
   -webkit-font-smoothing: antialiased;
   padding: 90px;
   color: white;
 }
-/* line 348, style.scss */
+/* line 349, style.scss */
 .hugeTextBlock p {
   font-size: 60px;
   font-weight: 300;
@@ -470,24 +471,24 @@ ul#social-links a {
   margin: 0;
 }
 
-/* line 357, style.scss */
+/* line 358, style.scss */
 a.link {
   cursor: pointer;
 }
-/* line 360, style.scss */
+/* line 361, style.scss */
 a.link::-moz-focus-inner {
   border: 0;
 }
-/* line 363, style.scss */
+/* line 364, style.scss */
 a.link:hover {
   text-decoration: none;
 }
-/* line 366, style.scss */
+/* line 367, style.scss */
 a.link:focus {
   outline: none;
 }
 
-/* line 371, style.scss */
+/* line 372, style.scss */
 .nextSectionBtn {
   cursor: pointer;
   font-weight: 300;
@@ -506,26 +507,26 @@ a.link:focus {
   -o-transition: all 300ms;
   transition: all 300ms;
 }
-/* line 385, style.scss */
+/* line 386, style.scss */
 .nextSectionBtn:hover {
   color: #505050;
 }
-/* line 389, style.scss */
+/* line 390, style.scss */
 .nextSectionBtn i {
   display: block;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 396, style.scss */
+  /* line 397, style.scss */
   .hugeTextBlock {
     padding: 20px;
   }
-  /* line 398, style.scss */
+  /* line 399, style.scss */
   .hugeTextBlock p {
     font-size: 30px;
   }
 
-  /* line 405, style.scss */
+  /* line 406, style.scss */
   section#projects #intouch-art {
     margin-top: -10px;
   }
