@@ -34,19 +34,19 @@ app.directive('autoheight', function ($window) {
 });
 
 //modify all the a tags that if href is #xxxxx, prevent default and manually push a history state
-app.directive('a', function () {
-	return {
-		restrict: 'E',
-		link: function (scope, elem, attrs) {
-			if (attrs.ngClick || attrs.href === '' || (attrs.href && attrs.href.charAt(0) === '#')) {
-				elem.on('click', function (e) {
-					history.pushState(null, attrs.href, attrs.href);
-					e.preventDefault();
-				});
-			}
-		}
-	};
-});
+//app.directive('a', function () {
+//	return {
+//		restrict: 'E',
+//		link: function (scope, elem, attrs) {
+//			if (attrs.ngClick || attrs.href === '' || (attrs.href && attrs.href.charAt(0) === '#')) {
+//				elem.on('click', function (e) {
+//					history.pushState(null, attrs.href, attrs.href);
+//					e.preventDefault();
+//				});
+//			}
+//		}
+//	};
+//});
 
 app.directive("scroll", function ($window) {
 	return function (scope, element, attrs) {

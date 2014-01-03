@@ -97,6 +97,19 @@ div#home {
 
 section {
 
+  a{
+	color:$dark-gray;
+	text-decoration: none;
+  }
+  a:hover{
+	color:$dark-gray;
+	text-decoration: none;
+
+  }
+  a:active{
+	text-decoration: none;
+  }
+
   padding: 40px 0;
   h3 {
 	padding-top: 0;
@@ -122,6 +135,16 @@ section {
 	}
   }
   &#design {
+	h2{margin-bottom: 20px;
+	a{color:white;}
+	}
+	p,h2{
+	  @include transition(all 500ms);
+	  opacity: 0;
+	}
+	p.animated,h2.animated{
+	  opacity: 1;
+	}
 	background-color: $orange;
 	color: white;
 	p {
