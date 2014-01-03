@@ -48,36 +48,47 @@ div#home {
 
 }
 
-.ex-links{
-  margin-top: 20px;
+.ex-github a{
+  color:orange;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover{
+	text-decoration: none;
+	color:$dark-gray;
+  }
+  &:active{
+	text-decoration: none;
+  }
 }
+
 
 .ex-link {
   display: inline-block;
+  margin-top: 20px;
   margin-right: 20px;
   cursor: pointer;
 
-  a{
+  a {
 	@include transition(color 500ms);
-	color:$orange;
+	color:  $dark-gray;
 	font-weight: 300;
 	font-size: 15px;
-	border: 1px solid ;
+	border: 1px solid;
 
 	display: inline-block;
 	border-radius: 5px;
-	padding:0 5px;
+	padding: 0 5px;
 
 	text-decoration: none;
-	&:active{
+	&:active {
 	  text-decoration: none;
-	  color:$dark-gray;
+	  color: $orange;
 	  @include animation(tada 1s forwards);
 	}
-	&:hover{
+	&:hover {
 	  text-decoration: none;
-	  color:$dark-gray;
-	  //
+	  color: $orange;
+
 
 	}
   }
@@ -111,14 +122,18 @@ section {
 	}
   }
   &#design {
-	background-color: $dark-gray;
+	background-color: $orange;
+	color: white;
+	p {
+	  color: white;
+	}
   }
 
   &#projects {
 	box-shadow: 0px -3px 9px rgba($dark-gray, 0.1);
 	background-color: $light-gray;
-	margin-top: -10px;
-	.project-entry{
+
+	.project-entry {
 
 	  padding: 40px 0;
 	}
@@ -127,27 +142,63 @@ section {
 	  margin-bottom: 20px;
 	}
 
-	h3{
+	h3 {
 	  font-weight: 300;
 	  font-size: 30px;
 	}
-	p{
-	 // color:white;
+	p {
+	  // color:white;
 	}
 
-	#intouch-art{
+	.engage-art {
+	  &#engage-art-1 img {
+		margin-bottom: 20px;
+		margin-left: -100px;
+		&.animated {
+		  margin-left: 0px;
+
+		  opacity: 1;
+		}
+	  }
+
+	  &#engage-art-2 img  {
+		margin-left: 100px;
+		&.animated {
+		  margin-left: 0px;
+
+		  opacity: 1;
+		}
+	  }
+
+	  img {
+
+		opacity: 1;
+		width: 100%;
+		border: 4px white solid;
+		@include transition(all 500ms ease-in);
+		&:hover{
+		    border-color:lighten($dark-gray,50%) ;
+		}
+	  }
+
+
+	}
+
+	#intouch-art {
 	  opacity: 0;
 	  @include transition(opacity 1000ms);
-	  img{
+	  img {
+
+		width: 100%;
 		opacity: 0;
 	  }
 	  background-image: url('/img/intouch-iphone5.png');
 	  background-repeat: no-repeat;
 	  background-size: 95%;
-	  background-position:50% 0;
+	  background-position: 50% 0;
 
 	}
-	#intouch-art.animated{
+	#intouch-art.animated {
 	  opacity: 1;
 	}
 
@@ -183,11 +234,17 @@ section {
 	  margin-top: 40px;
 	}
 	.job-duration {
+	  @include transition(all 1500ms);
+	  opacity: 0;
 	  background-color: $orange;
 	  color: white;
 	  margin-top: 5px;
+	  &.animated {
+		opacity: 1;
+	  }
 
 	}
+
 	.job-describ {
 	  color: $dark-gray;
 	}
@@ -195,12 +252,6 @@ section {
 	h2 {
 	  font-weight: 300;
 	  color: $dark-gray;
-	}
-
-	p {
-	  opacity: 0;
-	  @include transition(all 1000ms);
-
 	}
 
   }
@@ -214,16 +265,36 @@ a#logo {
 }
 
 .footer {
-  background-color: $dark-gray;
+  background-color: $orange;
   min-height: 50px;
 
 }
 
+div.up{
+  &:hover{
+	color:$orange;
+	background-color: white;
+	border-color: white;
+  }
+  cursor: pointer;
+  color:white;
+  font-size: 30px;
+  width: 50px;
+  height:50px;
+  margin:30px auto;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+}
+
 ul#social-links {
 
-  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 200px;
   list-style: none;
-  margin-right: 5px;
+
   li {
 	cursor: pointer;
 	float: left;
@@ -297,7 +368,6 @@ a.link {
   }
 }
 
-
 //style for phones and tablets
 @media only screen and (max-width: 767px) {
   .hugeTextBlock {
@@ -307,10 +377,10 @@ a.link {
 	}
   }
 
-  section{
-	&#projects{
-	  #intouch-art{
-		  margin-top: -10px;
+  section {
+	&#projects {
+	  #intouch-art {
+		margin-top: -10px;
 
 	  }
 	}

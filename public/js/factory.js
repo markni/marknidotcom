@@ -58,7 +58,7 @@ function checkvisible( elm ) {
         st = scrollY(), // Scroll Top
         y = posY(elm);
 
-    console.log(y,vpH,st) ;
+
     return (y < (vpH + st));
 }
 
