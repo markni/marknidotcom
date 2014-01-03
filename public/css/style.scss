@@ -1,6 +1,6 @@
 @import "compass";
 @import "mixins";
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+
 
 $light-gray: rgb(244, 244, 244);
 $dark-gray: rgb(80, 80, 80);
@@ -70,7 +70,7 @@ div#home {
 
   a {
 	@include transition(color 500ms);
-	color:  $dark-gray;
+	color:  $orange;
 	font-weight: 300;
 	font-size: 15px;
 	border: 1px solid;
@@ -82,12 +82,12 @@ div#home {
 	text-decoration: none;
 	&:active {
 	  text-decoration: none;
-	  color: $orange;
+	  color: $dark-gray;
 	  @include animation(tada 1s forwards);
 	}
 	&:hover {
 	  text-decoration: none;
-	  color: $orange;
+	  color: $dark-gray;
 
 
 	}

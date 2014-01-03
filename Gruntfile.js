@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                 separator: ''
             },
             dist: {
-                src: ['public/js/vendor/*.js'
+                src: ['public/js/vendor/angular.min.js'
 					,'public/js/factory.js'
                     ,'public/js/main.js'
 					,'public/js/controller.js'
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
                 dest: 'dist/public/js/<%= pkg.name %>.js'
             },
 			css: {
-				src: ['public/css/bootstrap.css'
+				src: ['public/css/bootstrap.min.css'
 					,'public/css/style.css'],
 				dest: 'dist/public/css/<%= pkg.name %>.css'
 			}
@@ -46,8 +46,8 @@ module.exports = function(grunt) {
                     {expand: true, src: ['package.json'], dest: 'dist/'} ,
                     {expand: true, src: ['public/**'], dest: 'dist/'},
                     {expand: true, src: ['markni.js'], dest: 'dist/'},
-                    {expand: true, src: ['views/layout_production.jade'], dest: 'dist/views/', rename:function(dest,src){
-                        return dest+'layout.jade';
+                    {expand: true, src: ['public/index_production.html'], dest: 'dist/public/', rename:function(dest,src){
+                        return dest+'index.html';
                     }}
 
 
