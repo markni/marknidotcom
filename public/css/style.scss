@@ -40,7 +40,10 @@ $cyan: #9ED4CB;
 body {
   background-color: $orange;
   min-width: 320px;
+
+
 }
+
 
 div#home {
   width: 100%;
@@ -95,6 +98,9 @@ div#home {
 
 }
 
+.x2{display: none;}
+.x1{display: block;}
+
 section {
 
   a{
@@ -135,8 +141,9 @@ section {
 	}
   }
   &#design {
+	a{color:white; text-decoration: underline}
 	h2{margin-bottom: 20px;
-	a{color:white;}
+	a{color:white;text-decoration: none}
 	}
 	p,h2{
 	  @include transition(all 500ms);
@@ -156,6 +163,19 @@ section {
 	box-shadow: 0px -3px 9px rgba($dark-gray, 0.1);
 	background-color: $light-gray;
 
+	em{
+	  color:black;
+	  text-decoration: none;
+	  font-style: normal;
+	  background-color: lighten($dark-gray,60%);
+	  display: inline-block;
+	  border-radius: 4px;
+	  padding: 0 5px;
+	  &:hover{
+		color:white;
+	  }
+	}
+
 	.project-entry {
 
 	  padding: 40px 0;
@@ -171,6 +191,7 @@ section {
 	}
 	p {
 	  // color:white;
+	  color:$dark-gray;
 	}
 
 	.engage-art {
@@ -408,5 +429,18 @@ a.link {
 
 	  }
 	}
+  }
+}
+
+
+//retina display
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .x2 {display: block;}
+  .x1 {display: none;}
+
+  section#projects #intouch-art  {
+	background-image: url('/img/intouch-iphone5@x2.png');
   }
 }

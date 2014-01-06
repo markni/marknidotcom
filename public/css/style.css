@@ -120,36 +120,36 @@ body {
   min-width: 320px;
 }
 
-/* line 45, style.scss */
+/* line 48, style.scss */
 div#home {
   width: 100%;
   overflow: hidden;
 }
 
-/* line 51, style.scss */
+/* line 54, style.scss */
 .ex-github a {
   color: orange;
   cursor: pointer;
   text-decoration: none;
 }
-/* line 55, style.scss */
+/* line 58, style.scss */
 .ex-github a:hover {
   text-decoration: none;
   color: #505050;
 }
-/* line 59, style.scss */
+/* line 62, style.scss */
 .ex-github a:active {
   text-decoration: none;
 }
 
-/* line 65, style.scss */
+/* line 68, style.scss */
 .ex-link {
   display: inline-block;
   margin-top: 20px;
   margin-right: 20px;
   cursor: pointer;
 }
-/* line 71, style.scss */
+/* line 74, style.scss */
 .ex-link a {
   -webkit-transition: color 500ms;
   -moz-transition: color 500ms;
@@ -164,7 +164,7 @@ div#home {
   padding: 0 5px;
   text-decoration: none;
 }
-/* line 83, style.scss */
+/* line 86, style.scss */
 .ex-link a:active {
   text-decoration: none;
   color: #505050;
@@ -173,44 +173,54 @@ div#home {
   -o-animation: tada 1s forwards;
   animation: tada 1s forwards;
 }
-/* line 88, style.scss */
+/* line 91, style.scss */
 .ex-link a:hover {
   text-decoration: none;
   color: #505050;
 }
 
-/* line 98, style.scss */
+/* line 101, style.scss */
+.x2 {
+  display: none;
+}
+
+/* line 102, style.scss */
+.x1 {
+  display: block;
+}
+
+/* line 104, style.scss */
 section {
   padding: 40px 0;
 }
-/* line 100, style.scss */
+/* line 106, style.scss */
 section a {
   color: #505050;
   text-decoration: none;
 }
-/* line 104, style.scss */
+/* line 110, style.scss */
 section a:hover {
   color: #505050;
   text-decoration: none;
 }
-/* line 109, style.scss */
+/* line 115, style.scss */
 section a:active {
   text-decoration: none;
 }
-/* line 114, style.scss */
+/* line 120, style.scss */
 section h3 {
   padding-top: 0;
   margin-top: 0;
 }
-/* line 118, style.scss */
+/* line 124, style.scss */
 section h2 {
   font-weight: 300;
 }
-/* line 122, style.scss */
+/* line 128, style.scss */
 section#introduction {
   color: #ebecdd;
 }
-/* line 125, style.scss */
+/* line 131, style.scss */
 section#introduction em {
   display: inline-block;
   -webkit-transition: color 200ms;
@@ -222,24 +232,30 @@ section#introduction em {
   cursor: pointer;
   position: relative;
 }
-/* line 132, style.scss */
+/* line 138, style.scss */
 section#introduction em:hover {
   color: #505050;
 }
-/* line 137, style.scss */
+/* line 143, style.scss */
 section#design {
   background-color: #ea693f;
   color: white;
 }
-/* line 138, style.scss */
+/* line 144, style.scss */
+section#design a {
+  color: white;
+  text-decoration: underline;
+}
+/* line 145, style.scss */
 section#design h2 {
   margin-bottom: 20px;
 }
-/* line 139, style.scss */
+/* line 146, style.scss */
 section#design h2 a {
   color: white;
+  text-decoration: none;
 }
-/* line 141, style.scss */
+/* line 148, style.scss */
 section#design p, section#design h2 {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -247,52 +263,70 @@ section#design p, section#design h2 {
   transition: all 500ms;
   opacity: 0;
 }
-/* line 145, style.scss */
+/* line 152, style.scss */
 section#design p.animated, section#design h2.animated {
   opacity: 1;
 }
-/* line 150, style.scss */
+/* line 157, style.scss */
 section#design p {
   color: white;
 }
-/* line 155, style.scss */
+/* line 162, style.scss */
 section#projects {
   box-shadow: 0px -3px 9px rgba(80, 80, 80, 0.1);
   background-color: #f4f4f4;
 }
-/* line 159, style.scss */
+/* line 166, style.scss */
+section#projects em {
+  color: black;
+  text-decoration: none;
+  font-style: normal;
+  background-color: #e9e9e9;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0 5px;
+}
+/* line 174, style.scss */
+section#projects em:hover {
+  color: white;
+}
+/* line 179, style.scss */
 section#projects .project-entry {
   padding: 40px 0;
 }
-/* line 163, style.scss */
+/* line 183, style.scss */
 section#projects h2 {
   margin-bottom: 20px;
 }
-/* line 168, style.scss */
+/* line 188, style.scss */
 section#projects h3 {
   font-weight: 300;
   font-size: 30px;
 }
-/* line 177, style.scss */
+/* line 192, style.scss */
+section#projects p {
+  color: #505050;
+}
+/* line 198, style.scss */
 section#projects .engage-art#engage-art-1 img {
   margin-bottom: 20px;
   margin-left: -100px;
 }
-/* line 180, style.scss */
+/* line 201, style.scss */
 section#projects .engage-art#engage-art-1 img.animated {
   margin-left: 0px;
   opacity: 1;
 }
-/* line 187, style.scss */
+/* line 208, style.scss */
 section#projects .engage-art#engage-art-2 img {
   margin-left: 100px;
 }
-/* line 189, style.scss */
+/* line 210, style.scss */
 section#projects .engage-art#engage-art-2 img.animated {
   margin-left: 0px;
   opacity: 1;
 }
-/* line 196, style.scss */
+/* line 217, style.scss */
 section#projects .engage-art img {
   opacity: 1;
   width: 100%;
@@ -302,11 +336,11 @@ section#projects .engage-art img {
   -o-transition: all 500ms ease-in;
   transition: all 500ms ease-in;
 }
-/* line 202, style.scss */
+/* line 223, style.scss */
 section#projects .engage-art img:hover {
   border-color: #d0d0d0;
 }
-/* line 210, style.scss */
+/* line 231, style.scss */
 section#projects #intouch-art {
   opacity: 0;
   -webkit-transition: opacity 1000ms;
@@ -318,50 +352,50 @@ section#projects #intouch-art {
   background-size: 95%;
   background-position: 50% 0;
 }
-/* line 213, style.scss */
+/* line 234, style.scss */
 section#projects #intouch-art img {
   width: 100%;
   opacity: 0;
 }
-/* line 224, style.scss */
+/* line 245, style.scss */
 section#projects #intouch-art.animated {
   opacity: 1;
 }
-/* line 229, style.scss */
+/* line 250, style.scss */
 section#experience {
   box-shadow: 0px -3px 9px rgba(80, 80, 80, 0.1);
   background-color: #ebecdd;
 }
-/* line 232, style.scss */
+/* line 253, style.scss */
 section#experience .job-entry {
   margin-top: 20px;
 }
-/* line 234, style.scss */
+/* line 255, style.scss */
 section#experience .job-entry .months {
   display: none;
 }
-/* line 238, style.scss */
+/* line 259, style.scss */
 section#experience .job-entry.animated p {
   opacity: 1;
 }
-/* line 243, style.scss */
+/* line 264, style.scss */
 section#experience .job-entry:hover .period {
   display: none;
 }
-/* line 246, style.scss */
+/* line 267, style.scss */
 section#experience .job-entry:hover .months {
   display: inline;
 }
-/* line 252, style.scss */
+/* line 273, style.scss */
 section#experience ul {
   list-style: none;
   padding: 0;
 }
-/* line 256, style.scss */
+/* line 277, style.scss */
 section#experience .job-list {
   margin-top: 40px;
 }
-/* line 259, style.scss */
+/* line 280, style.scss */
 section#experience .job-duration {
   -webkit-transition: all 1500ms;
   -moz-transition: all 1500ms;
@@ -372,34 +406,34 @@ section#experience .job-duration {
   color: white;
   margin-top: 5px;
 }
-/* line 265, style.scss */
+/* line 286, style.scss */
 section#experience .job-duration.animated {
   opacity: 1;
 }
-/* line 271, style.scss */
+/* line 292, style.scss */
 section#experience .job-describ {
   color: #505050;
 }
-/* line 275, style.scss */
+/* line 296, style.scss */
 section#experience h2 {
   font-weight: 300;
   color: #505050;
 }
 
-/* line 283, style.scss */
+/* line 304, style.scss */
 a#logo {
   text-decoration: none;
   font-size: 40px;
   padding: 20px;
 }
 
-/* line 290, style.scss */
+/* line 311, style.scss */
 .footer {
   background-color: #ea693f;
   min-height: 50px;
 }
 
-/* line 296, style.scss */
+/* line 317, style.scss */
 div.up {
   cursor: pointer;
   color: white;
@@ -411,14 +445,14 @@ div.up {
   border-radius: 50%;
   text-align: center;
 }
-/* line 297, style.scss */
+/* line 318, style.scss */
 div.up:hover {
   color: #ea693f;
   background-color: white;
   border-color: white;
 }
 
-/* line 313, style.scss */
+/* line 334, style.scss */
 ul#social-links {
   margin-left: auto;
   margin-right: auto;
@@ -427,7 +461,7 @@ ul#social-links {
   list-style: none;
   padding: 0;
 }
-/* line 322, style.scss */
+/* line 343, style.scss */
 ul#social-links li {
   cursor: pointer;
   float: left;
@@ -440,30 +474,30 @@ ul#social-links li {
   -o-transition: all 300ms;
   transition: all 300ms;
 }
-/* line 330, style.scss */
+/* line 351, style.scss */
 ul#social-links li:hover {
   -webkit-animation: tada 1s forwards;
   -moz-animation: tada 1s forwards;
   -o-animation: tada 1s forwards;
   animation: tada 1s forwards;
 }
-/* line 334, style.scss */
+/* line 355, style.scss */
 ul#social-links a {
   color: white;
 }
 
-/* line 340, style.scss */
+/* line 361, style.scss */
 .hugeBlock {
   position: relative;
 }
 
-/* line 344, style.scss */
+/* line 365, style.scss */
 .hugeTextBlock {
   -webkit-font-smoothing: antialiased;
   padding: 90px;
   color: white;
 }
-/* line 349, style.scss */
+/* line 370, style.scss */
 .hugeTextBlock p {
   font-size: 60px;
   font-weight: 300;
@@ -471,24 +505,24 @@ ul#social-links a {
   margin: 0;
 }
 
-/* line 358, style.scss */
+/* line 379, style.scss */
 a.link {
   cursor: pointer;
 }
-/* line 361, style.scss */
+/* line 382, style.scss */
 a.link::-moz-focus-inner {
   border: 0;
 }
-/* line 364, style.scss */
+/* line 385, style.scss */
 a.link:hover {
   text-decoration: none;
 }
-/* line 367, style.scss */
+/* line 388, style.scss */
 a.link:focus {
   outline: none;
 }
 
-/* line 372, style.scss */
+/* line 393, style.scss */
 .nextSectionBtn {
   cursor: pointer;
   font-weight: 300;
@@ -507,27 +541,43 @@ a.link:focus {
   -o-transition: all 300ms;
   transition: all 300ms;
 }
-/* line 386, style.scss */
+/* line 407, style.scss */
 .nextSectionBtn:hover {
   color: #505050;
 }
-/* line 390, style.scss */
+/* line 411, style.scss */
 .nextSectionBtn i {
   display: block;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 397, style.scss */
+  /* line 418, style.scss */
   .hugeTextBlock {
     padding: 20px;
   }
-  /* line 399, style.scss */
+  /* line 420, style.scss */
   .hugeTextBlock p {
     font-size: 30px;
   }
 
-  /* line 406, style.scss */
+  /* line 427, style.scss */
   section#projects #intouch-art {
     margin-top: -10px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* line 440, style.scss */
+  .x2 {
+    display: block;
+  }
+
+  /* line 441, style.scss */
+  .x1 {
+    display: none;
+  }
+
+  /* line 443, style.scss */
+  section#projects #intouch-art {
+    background-image: url("/img/intouch-iphone5@x2.png");
   }
 }

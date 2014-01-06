@@ -14,9 +14,6 @@
 	<link rel="stylesheet" href="css/style.css">
 
 
-
-
-
 </head>
 <body>
 
@@ -26,9 +23,9 @@
 <section class="hugeBlock hugeTextBlock" autoheight id="introduction">
 	<p>Hello there, my name is <em>Mark</em>. </p>
 
-	<p>I'm a <em>web</em> developer.
-		I love coding in <em>JavaScript</em>.
-		{{lastjobdate}}, I worked for <em>IBM</em> on their latest web project.</p>
+	<p>I'm a <a href="#projects"><em>web</em></a> developer.
+		I love creating exciting web apps with <a href="#projects"><em>JavaScript</em></a>.
+		Last year, I worked for <a href="#experience"><em>IBM</em></a> on their latest web project.</p>
 
 
 	<div class="nextSectionBtn link" ng-click="goToNextSection()"> SCROLL TO FIND OUT MORE
@@ -47,25 +44,32 @@
 				<h3>Intouch</h3>
 
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo id massa cursus
-					pretium. Fusce euismod libero turpis, ut eleifend velit fringilla eget. In hac habitasse
-					platea dictumst. Nulla ultricies mattis sodales. Proin non vehicula enim. Aliquam consequat
-					dignissim nibh porta euismod. Vivamus in consequat elit. Duis ac orci tortor. Mauris eu
-					interdum sapien. Aenean sit amet pulvinar massa. Nunc et tristique felis. Curabitur non quam
-					augue. Vestibulum eu ultrices est. Integer ac viverra sapien, nec interdum libero.
-					Suspendisse consequat, leo eget vehicula semper, erat lorem laoreet nulla, a malesuada erat
-					eros sodales velit.
+					InTouch is a mobile web app I designed to help users manage their TV show watching progress. Being a
+					Tv drama / Animation fan, it’s easy to lost track what episodes you last time watched to. With this
+					app, users can keep track their progress of all shows they currently watching and get notified when
+					a new episode will be on air.
+				</p>
+
+				<p>
+					As more people watching their favorite shows on their mobile devices, InTouch is designed with
+					mobile in mind. The app is build with <em>AngularJS</em>, <em>NodeJS</em> and <em>Bootstrap</em>
+					with <em>REST api</em> for
+					data
+					communication in between and html5 <em>localstorage</em> for client side caching. This ensures a
+					fast and
+					responsive user experience on every devices.
+
 				</p>
 
 				<div class="ex-links">
 					<div class="ex-link"><a href="http://netaba.re" target="_blank">Launch App</a></div>
-					<div class="ex-link"><a>Github</a></div>
+					<div class="ex-link"><a href="https://github.com/xna2/intouch2" target="_blank">Github</a></div>
 				</div>
 			</div>
 
 			<div scroll class="col-lg-8 col-md-7" id="intouch-art">
-				<img src="/img/intouch-iphone5.png"/>
-
+				<img class="x1" src="/img/intouch-iphone5.png"/>
+				<img class="x2" src="/img/intouch-iphone5@x2.png"/>
 			</div>
 
 		</div>
@@ -76,35 +80,51 @@
 				<h3>Engage</h3>
 
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo id massa cursus
-					pretium. Fusce euismod libero turpis, ut eleifend velit fringilla eget. In hac habitasse
-					platea dictumst. Nulla ultricies mattis sodales. Proin non vehicula enim. Aliquam consequat
-					dignissim nibh porta euismod. Vivamus in consequat elit. Duis ac orci tortor. Mauris eu
-					interdum sapien. Aenean sit amet pulvinar massa. Nunc et tristique felis. Curabitur non quam
-					augue. Vestibulum eu ultrices est. Integer ac viverra sapien, nec interdum libero.
-					Suspendisse consequat, leo eget vehicula semper, erat lorem laoreet nulla, a malesuada erat
-					eros sodales velit.
+					The Engage is a web app that
+					enables user to share any url from the web with an extra trick: it will analyze the page and extract
+					only the main content, then reformat it into reader friendly format that fits to all devices.
 				</p>
+
+				<p>
+					Engage is a hornor research project for Simon Fraser University, it’s a group based project resulted
+					in the collaboration of students from SFU’s CS and design departments. The app is written in <em>NodeJS</em>,
+					<em>JQuery</em> and <em>ZURB Foundation</em> with both <em>MYSQL</em>
+					and <em>Elasticsearch</em> used
+					in
+					the DB end (Elasticsearch enables us fast full text indexing/search for shared articles). </p>
+
+				<P> My
+					responsibility in the team is front-end design implementation (both Javascript and CSS) and server
+					side REST services design
+					and
+					implementation. </P>
+
 			</div>
 
 			<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 engage-art" id="engage-art-1">
-				<img scroll src="/img/engage-1.jpg"/>
+				<img class="x1" scroll src="/img/engage-1.jpg"/>
+				<img class="x2" scroll src="/img/engage-1@x2.jpg"/>
 
 			</div>
 			<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 engage-art" id="engage-art-2">
-				<img scroll src="/img/engage-2.jpg"/>
+				<img class="x1"  scroll src="/img/engage-2.jpg"/>
+				<img class="x2"  scroll src="/img/engage-2@x2.jpg"/>
 			</div>
 
 
 			<div class="ex-links clearfix col-xs-12">
-				<div class="ex-link"><a>View on Github</a></div>
+				<div
+						class="ex-link"><a href="https://github.com/sfu-innovation/project-xavier" target="_blank">View
+					on
+					Github</a></div>
 			</div>
 
 
 		</div>
 	</div>
 
-	<h4 class="text-center ex-github"><a target="_blank" href="https://github.com/xna2"> View More Projects on Github  <i class="fa fa-external-link"></i></a></h4>
+	<h4 class="text-center ex-github"><a target="_blank" href="https://github.com/xna2"> View More Projects on Github <i
+			class="fa fa-external-link"></i></a></h4>
 
 </section>
 
@@ -115,22 +135,16 @@
 		<li class="row job-entry">
 			<div class="col-sm-8 col-sm-offset-2 col-xs-12">
 				<div scroll class="col-sm-2 hidden-xs job-duration text-right"><span
-						class="period">2010.1 - 2010.8</span><span class="months">8 months</span></div>
+						class="period">2013.1 - 2013.4</span><span class="months">4 months</span></div>
 				<div class="col-sm-10 job-describ">
-					<h3>Lorem ipsum dolor sit amet</h3>
-					<h4>Lorem ipsum dolor sit amet</h4>
+					<h3>Web Developer (co-op)</h3>
+					<h4>IBM Canada, Victoria</h4>
 
-					<p scroll class=" visible-xs job-duration text-center">2010.1 - 2010.8</p>
+					<p scroll class=" visible-xs job-duration text-center">2013.1 - 2013.4</p>
 
 					<p class="clearfix">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo id massa cursus
-						pretium. Fusce euismod libero turpis, ut eleifend velit fringilla eget. In hac habitasse
-						platea dictumst. Nulla ultricies mattis sodales. Proin non vehicula enim. Aliquam consequat
-						dignissim nibh porta euismod. Vivamus in consequat elit. Duis ac orci tortor. Mauris eu
-						interdum sapien. Aenean sit amet pulvinar massa. Nunc et tristique felis. Curabitur non quam
-						augue. Vestibulum eu ultrices est. Integer ac viverra sapien, nec interdum libero.
-						Suspendisse consequat, leo eget vehicula semper, erat lorem laoreet nulla, a malesuada erat
-						eros sodales velit.
+						Feature development and code maintenance of pre-release version of IBM Forms (formerly IBM Lotus
+						Forms) . Working with Dojo Toolkit, XML based e-forms APIs, Java and DB2 servers.
 					</p>
 
 				</div>
@@ -140,22 +154,16 @@
 		<li scroll class="row job-entry">
 			<div class="col-sm-8 col-sm-offset-2 col-xs-12">
 				<div scroll class="col-sm-2 hidden-xs job-duration text-right"><span
-						class="period">2010.1 - 2010.8</span><span class="months">8 months</span></div>
+						class="period">2011.1 - 2011.8</span><span class="months">8 months</span></div>
 				<div class="col-sm-10 job-describ">
-					<h3>Lorem ipsum dolor sit amet</h3>
-					<h4>Lorem ipsum dolor sit amet</h4>
+					<h3>Web Developer (co-op)</h3>
+					<h4>PNI digital media, Vancouver</h4>
 
-					<p scroll class=" visible-xs job-duration text-center">2010.1 - 2010.8</p>
+					<p scroll class=" visible-xs job-duration text-center">2011.1 - 2011.8</p>
 
 					<p class="clearfix">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo id massa cursus
-						pretium. Fusce euismod libero turpis, ut eleifend velit fringilla eget. In hac habitasse
-						platea dictumst. Nulla ultricies mattis sodales. Proin non vehicula enim. Aliquam consequat
-						dignissim nibh porta euismod. Vivamus in consequat elit. Duis ac orci tortor. Mauris eu
-						interdum sapien. Aenean sit amet pulvinar massa. Nunc et tristique felis. Curabitur non quam
-						augue. Vestibulum eu ultrices est. Integer ac viverra sapien, nec interdum libero.
-						Suspendisse consequat, leo eget vehicula semper, erat lorem laoreet nulla, a malesuada erat
-						eros sodales velit.
+						Legacy JavaScript framework maintenance, web products development for industry leading retailers
+						such as Wal-Mart and Costco. Working with ASP.NET, jQuery, and MS SQL servers.
 					</p>
 
 				</div>
@@ -165,22 +173,15 @@
 		<li scroll class="row job-entry">
 			<div class="col-sm-8 col-sm-offset-2 col-xs-12">
 				<div scroll class="col-sm-2 hidden-xs job-duration text-right"><span
-						class="period">2010.1 - 2010.8</span><span class="months">8 months</span></div>
+						class="period">2008 - 2013</span><span class="months">2008 - 2013</span></div>
 				<div class="col-sm-10 job-describ">
-					<h3>Lorem ipsum dolor sit amet</h3>
-					<h4>Lorem ipsum dolor sit amet</h4>
+					<h3>B.Sc, Computing Scince</h3>
+					<h4>Simon Fraser University, Canada</h4>
 
-					<p scroll class=" visible-xs job-duration text-center">2010.1 - 2010.8</p>
+					<p scroll class=" visible-xs job-duration text-center">2008 - 2013</p>
 
 					<p class="clearfix">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo id massa cursus
-						pretium. Fusce euismod libero turpis, ut eleifend velit fringilla eget. In hac habitasse
-						platea dictumst. Nulla ultricies mattis sodales. Proin non vehicula enim. Aliquam consequat
-						dignissim nibh porta euismod. Vivamus in consequat elit. Duis ac orci tortor. Mauris eu
-						interdum sapien. Aenean sit amet pulvinar massa. Nunc et tristique felis. Curabitur non quam
-						augue. Vestibulum eu ultrices est. Integer ac viverra sapien, nec interdum libero.
-						Suspendisse consequat, leo eget vehicula semper, erat lorem laoreet nulla, a malesuada erat
-						eros sodales velit.
+
 					</p>
 
 				</div>
@@ -201,16 +202,22 @@
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2 col-xs-12">
 			<div class="col-xs-12">
-				<p  scroll>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo id massa cursus
-					pretium. Fusce euismod libero turpis, ut eleifend velit fringilla eget. In hac habitasse
-					platea dictumst. Nulla ultricies mattis sodales. Proin non vehicula enim. Aliquam consequat
-					dignissim nibh porta euismod. Vivamus in consequat elit. Duis ac orci tortor. Mauris eu
-					interdum sapien. Aenean sit amet pulvinar massa. Nunc et tristique felis. Curabitur non quam
-					augue. Vestibulum eu ultrices est. Integer ac viverra sapien, nec interdum libero.
-					Suspendisse consequat, leo eget vehicula semper, erat lorem laoreet nulla, a malesuada erat
-					eros sodales velit.
+				<p scroll>
+					Just in case you haven't notice. Besides programing, I have a great interest in design as well!
+					That’s means that I quite skillful in design tools such as Photoshop, Illustrator and many my
+					applications that result of my own design (such as this page). I’m also a fan of photography. So if
+					you’re share the same interests, be sure to check out my <a href="http://dribbble.com/ruocaled"
+																				target="_blank"
+						>Dribbble</a> and <a
+						href="http://www.flickr.com/photos/95589152@N02/" target="_blank">Flickr</a>
+					page!
+
 				</p>
+
+				<p scroll>
+					Otherwise, feel free to contact me by the following social medias or by email.
+				</p>
+
 			</div>
 		</div>
 
