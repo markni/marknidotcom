@@ -1,13 +1,14 @@
 {
-  "name": "markni-dot-com",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node markni.js"
-  },
-  "dependencies": {
-    "connect": "*"
-  },
+	"name": "markni-dot-com",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "git pull && npm install && grunt && node dist/markni.js",
+		"restart": "git pull && grunt && forever restart dist/markni.js"
+	},
+	"dependencies": {
+		"connect": "*"
+	},
 	"devDependencies": {
 		"grunt": "~0.4.2",
 		"grunt-contrib-uglify": "~0.2.2",
