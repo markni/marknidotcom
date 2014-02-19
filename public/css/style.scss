@@ -193,7 +193,8 @@ section {
 
 	h3 {
 	  font-weight: 300;
-	  font-size: 30px;
+	  font-size: 40px;
+	  margin-bottom: 35px;
 	}
 	p {
 	  // color:white;
@@ -201,6 +202,7 @@ section {
 	}
 
 	.engage-art {
+	  margin-top: 30px;
 	  &#engage-art-1 img {
 		margin-bottom: 20px;
 		margin-left: -100px;
@@ -242,7 +244,7 @@ section {
 		width: 100%;
 		opacity: 0;
 	  }
-	  background-image: url('/img/intouch-iphone5.png');
+	  background-image: url('../img/intouch-iphone5.png');
 	  background-repeat: no-repeat;
 	  background-size: 95%;
 	  background-position: 50% 0;
@@ -447,6 +449,6 @@ a.link {
   .x1 {display: none;}
 
   section#projects #intouch-art  {
-	background-image: url('/img/intouch-iphone5@x2.png');
+	background-image: url('../img/intouch-iphone5@x2.png');
   }
 }
