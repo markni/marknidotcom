@@ -48,11 +48,25 @@ app.directive('autoheight', function ($window) {
 //	};
 //});
 
-app.directive("scroll", function ($window) {
+app.directive("scroll", function ($window,$interval) {
 	return function (scope, element, attrs) {
-		angular.element($window).bind("scroll", function () {
+		$interval(function(){
+
 			if (checkvisible(element[0])) {
-				angular.element(element).addClass('animated');
+				if (!angular.element(element).hasClass( 'animated' )){
+					angular.element(element).addClass('animated');
+				}
+
+			}
+
+		},1000);
+		angular.element($window).bind("scroll", function () {
+//			console.log((+new Date()));
+			if (checkvisible(element[0])) {
+				if (!angular.element(element).hasClass( 'animated' )){
+					angular.element(element).addClass('animated');
+				}
+
 			}
 
 			scope.$apply();
