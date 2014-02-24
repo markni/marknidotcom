@@ -46,7 +46,8 @@ body {
 }
 
 p{
- font-size:16px;
+ font-size:18px;
+
 }
 
 
@@ -123,8 +124,10 @@ section {
 
   padding: 40px 0;
   h3 {
+	font-weight: 300;
 	padding-top: 0;
 	margin-top: 0;
+	margin-bottom: 30px;
   }
   h2 {
 	font-weight: 300;
@@ -161,12 +164,17 @@ section {
 	color: white;
 	p {
 	  color: white;
+	  font-family: Georgia, "Times New Roman", Times, serif;
 	}
   }
 
   &#projects {
 	box-shadow: 0px -3px 9px rgba($dark-gray, 0.1);
 	background-color: $light-gray;
+
+	p {
+	  font-family: Georgia, "Times New Roman", Times, serif;
+	}
 
 	em{
 	  color:black;
@@ -277,7 +285,9 @@ section {
   }
   &#experience {
 	box-shadow: 0px -3px 9px rgba($dark-gray, 0.1);
-
+	p{
+	  font-family: Georgia, "Times New Roman", Times, serif;
+	}
 	.job-entry {
 	  margin-top: 20px;
 	  .months {

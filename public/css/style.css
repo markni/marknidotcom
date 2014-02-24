@@ -122,39 +122,39 @@ body {
 
 /* line 48, style.scss */
 p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
-/* line 53, style.scss */
+/* line 54, style.scss */
 div#home {
   width: 100%;
   overflow: hidden;
 }
 
-/* line 59, style.scss */
+/* line 60, style.scss */
 .ex-github a {
   color: orange;
   cursor: pointer;
   text-decoration: none;
 }
-/* line 63, style.scss */
+/* line 64, style.scss */
 .ex-github a:hover {
   text-decoration: none;
   color: #505050;
 }
-/* line 67, style.scss */
+/* line 68, style.scss */
 .ex-github a:active {
   text-decoration: none;
 }
 
-/* line 73, style.scss */
+/* line 74, style.scss */
 .ex-link {
   display: inline-block;
   margin-top: 20px;
   margin-right: 20px;
   cursor: pointer;
 }
-/* line 79, style.scss */
+/* line 80, style.scss */
 .ex-link a {
   -webkit-transition: color 500ms;
   -moz-transition: color 500ms;
@@ -169,7 +169,7 @@ div#home {
   padding: 0 5px;
   text-decoration: none;
 }
-/* line 91, style.scss */
+/* line 92, style.scss */
 .ex-link a:active {
   text-decoration: none;
   color: #505050;
@@ -178,54 +178,56 @@ div#home {
   -o-animation: tada 1s forwards;
   animation: tada 1s forwards;
 }
-/* line 96, style.scss */
+/* line 97, style.scss */
 .ex-link a:hover {
   text-decoration: none;
   color: #505050;
 }
 
-/* line 106, style.scss */
+/* line 107, style.scss */
 .x2 {
   display: none;
 }
 
-/* line 107, style.scss */
+/* line 108, style.scss */
 .x1 {
   display: block;
 }
 
-/* line 109, style.scss */
+/* line 110, style.scss */
 section {
   padding: 40px 0;
 }
-/* line 111, style.scss */
+/* line 112, style.scss */
 section a {
   color: #505050;
   text-decoration: none;
 }
-/* line 115, style.scss */
+/* line 116, style.scss */
 section a:hover {
   color: #505050;
   text-decoration: none;
 }
-/* line 120, style.scss */
+/* line 121, style.scss */
 section a:active {
   text-decoration: none;
 }
-/* line 125, style.scss */
+/* line 126, style.scss */
 section h3 {
+  font-weight: 300;
   padding-top: 0;
   margin-top: 0;
+  margin-bottom: 30px;
 }
-/* line 129, style.scss */
+/* line 132, style.scss */
 section h2 {
   font-weight: 300;
 }
-/* line 133, style.scss */
+/* line 136, style.scss */
 section#introduction {
   color: #ebecdd;
 }
-/* line 136, style.scss */
+/* line 139, style.scss */
 section#introduction em {
   display: inline-block;
   -webkit-transition: color 200ms;
@@ -237,30 +239,30 @@ section#introduction em {
   cursor: pointer;
   position: relative;
 }
-/* line 143, style.scss */
+/* line 146, style.scss */
 section#introduction em:hover {
   color: #505050;
 }
-/* line 148, style.scss */
+/* line 151, style.scss */
 section#design {
   background-color: #ea693f;
   color: white;
 }
-/* line 149, style.scss */
+/* line 152, style.scss */
 section#design a {
   color: white;
   text-decoration: underline;
 }
-/* line 150, style.scss */
+/* line 153, style.scss */
 section#design h2 {
   margin-bottom: 20px;
 }
-/* line 151, style.scss */
+/* line 154, style.scss */
 section#design h2 a {
   color: white;
   text-decoration: none;
 }
-/* line 153, style.scss */
+/* line 156, style.scss */
 section#design p, section#design h2 {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -268,20 +270,25 @@ section#design p, section#design h2 {
   transition: all 500ms;
   opacity: 0;
 }
-/* line 157, style.scss */
+/* line 160, style.scss */
 section#design p.animated, section#design h2.animated {
   opacity: 1;
 }
-/* line 162, style.scss */
+/* line 165, style.scss */
 section#design p {
   color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-/* line 167, style.scss */
+/* line 171, style.scss */
 section#projects {
   box-shadow: 0px -3px 9px rgba(80, 80, 80, 0.1);
   background-color: #f4f4f4;
 }
-/* line 171, style.scss */
+/* line 175, style.scss */
+section#projects p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* line 179, style.scss */
 section#projects em {
   color: black;
   text-decoration: none;
@@ -291,30 +298,30 @@ section#projects em {
   border-radius: 4px;
   padding: 0 5px;
 }
-/* line 179, style.scss */
+/* line 187, style.scss */
 section#projects em:hover {
   background-color: #505050;
   color: white;
 }
-/* line 185, style.scss */
+/* line 193, style.scss */
 section#projects .project-entry {
   padding: 40px 0;
 }
-/* line 189, style.scss */
+/* line 197, style.scss */
 section#projects h2 {
   margin-bottom: 20px;
 }
-/* line 194, style.scss */
+/* line 202, style.scss */
 section#projects h3 {
   font-weight: 300;
   font-size: 40px;
   margin-bottom: 35px;
 }
-/* line 199, style.scss */
+/* line 207, style.scss */
 section#projects p {
   color: #505050;
 }
-/* line 204, style.scss */
+/* line 212, style.scss */
 section#projects .engage-art {
   -webkit-transition: all 1000ms;
   -moz-transition: all 1000ms;
@@ -323,11 +330,11 @@ section#projects .engage-art {
   position: relative;
   margin-top: 30px;
 }
-/* line 209, style.scss */
+/* line 217, style.scss */
 section#projects .engage-art:hover .expand {
   opacity: 1;
 }
-/* line 213, style.scss */
+/* line 221, style.scss */
 section#projects .engage-art .expand {
   cursor: pointer;
   color: #f4f4f4;
@@ -337,30 +344,30 @@ section#projects .engage-art .expand {
   top: 0;
   font-size: 20px;
 }
-/* line 221, style.scss */
+/* line 229, style.scss */
 section#projects .engage-art .expand:hover {
   color: #505050;
 }
-/* line 225, style.scss */
+/* line 233, style.scss */
 section#projects .engage-art#engage-art-1 img {
   margin-bottom: 20px;
   margin-left: -100px;
 }
-/* line 228, style.scss */
+/* line 236, style.scss */
 section#projects .engage-art#engage-art-1 img.animated {
   margin-left: 0px;
   opacity: 1;
 }
-/* line 235, style.scss */
+/* line 243, style.scss */
 section#projects .engage-art#engage-art-2 img {
   margin-left: 100px;
 }
-/* line 237, style.scss */
+/* line 245, style.scss */
 section#projects .engage-art#engage-art-2 img.animated {
   margin-left: 0px;
   opacity: 1;
 }
-/* line 244, style.scss */
+/* line 252, style.scss */
 section#projects .engage-art img {
   opacity: 1;
   width: 100%;
@@ -370,11 +377,11 @@ section#projects .engage-art img {
   -o-transition: all 500ms ease-in;
   transition: all 500ms ease-in;
 }
-/* line 250, style.scss */
+/* line 258, style.scss */
 section#projects .engage-art img:hover {
   border-color: #d0d0d0;
 }
-/* line 258, style.scss */
+/* line 266, style.scss */
 section#projects #intouch-art {
   opacity: 0;
   -webkit-transition: opacity 1000ms;
@@ -386,51 +393,55 @@ section#projects #intouch-art {
   background-size: 95%;
   background-position: 50% 0;
 }
-/* line 261, style.scss */
+/* line 269, style.scss */
 section#projects #intouch-art img {
   width: 100%;
   opacity: 0;
 }
-/* line 272, style.scss */
+/* line 280, style.scss */
 section#projects #intouch-art.animated {
   opacity: 1;
   margin-top: 100px;
 }
-/* line 278, style.scss */
+/* line 286, style.scss */
 section#experience {
   box-shadow: 0px -3px 9px rgba(80, 80, 80, 0.1);
   background-color: #ebecdd;
 }
-/* line 281, style.scss */
+/* line 288, style.scss */
+section#experience p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* line 291, style.scss */
 section#experience .job-entry {
   margin-top: 20px;
 }
-/* line 283, style.scss */
+/* line 293, style.scss */
 section#experience .job-entry .months {
   display: none;
 }
-/* line 287, style.scss */
+/* line 297, style.scss */
 section#experience .job-entry.animated p {
   opacity: 1;
 }
-/* line 292, style.scss */
+/* line 302, style.scss */
 section#experience .job-entry:hover .period {
   display: none;
 }
-/* line 295, style.scss */
+/* line 305, style.scss */
 section#experience .job-entry:hover .months {
   display: inline;
 }
-/* line 301, style.scss */
+/* line 311, style.scss */
 section#experience ul {
   list-style: none;
   padding: 0;
 }
-/* line 305, style.scss */
+/* line 315, style.scss */
 section#experience .job-list {
   margin-top: 40px;
 }
-/* line 308, style.scss */
+/* line 318, style.scss */
 section#experience .job-duration {
   -webkit-transition: all 1500ms;
   -moz-transition: all 1500ms;
@@ -441,34 +452,34 @@ section#experience .job-duration {
   color: white;
   margin-top: 5px;
 }
-/* line 314, style.scss */
+/* line 324, style.scss */
 section#experience .job-duration.animated {
   opacity: 1;
 }
-/* line 320, style.scss */
+/* line 330, style.scss */
 section#experience .job-describ {
   color: #505050;
 }
-/* line 324, style.scss */
+/* line 334, style.scss */
 section#experience h2 {
   font-weight: 300;
   color: #505050;
 }
 
-/* line 332, style.scss */
+/* line 342, style.scss */
 a#logo {
   text-decoration: none;
   font-size: 40px;
   padding: 20px;
 }
 
-/* line 339, style.scss */
+/* line 349, style.scss */
 .footer {
   background-color: #ea693f;
   min-height: 50px;
 }
 
-/* line 345, style.scss */
+/* line 355, style.scss */
 div.up {
   cursor: pointer;
   color: white;
@@ -480,14 +491,14 @@ div.up {
   border-radius: 50%;
   text-align: center;
 }
-/* line 346, style.scss */
+/* line 356, style.scss */
 div.up:hover {
   color: #ea693f;
   background-color: white;
   border-color: white;
 }
 
-/* line 362, style.scss */
+/* line 372, style.scss */
 ul#social-links {
   margin-left: auto;
   margin-right: auto;
@@ -496,7 +507,7 @@ ul#social-links {
   list-style: none;
   padding: 0;
 }
-/* line 371, style.scss */
+/* line 381, style.scss */
 ul#social-links li {
   cursor: pointer;
   float: left;
@@ -509,30 +520,30 @@ ul#social-links li {
   -o-transition: all 300ms;
   transition: all 300ms;
 }
-/* line 379, style.scss */
+/* line 389, style.scss */
 ul#social-links li:hover {
   -webkit-animation: tada 1s forwards;
   -moz-animation: tada 1s forwards;
   -o-animation: tada 1s forwards;
   animation: tada 1s forwards;
 }
-/* line 383, style.scss */
+/* line 393, style.scss */
 ul#social-links a {
   color: white;
 }
 
-/* line 389, style.scss */
+/* line 399, style.scss */
 .hugeBlock {
   position: relative;
 }
 
-/* line 393, style.scss */
+/* line 403, style.scss */
 .hugeTextBlock {
   -webkit-font-smoothing: antialiased;
   padding: 90px;
   color: white;
 }
-/* line 398, style.scss */
+/* line 408, style.scss */
 .hugeTextBlock p {
   font-size: 60px;
   font-weight: 300;
@@ -540,24 +551,24 @@ ul#social-links a {
   margin: 0;
 }
 
-/* line 407, style.scss */
+/* line 417, style.scss */
 a.link {
   cursor: pointer;
 }
-/* line 410, style.scss */
+/* line 420, style.scss */
 a.link::-moz-focus-inner {
   border: 0;
 }
-/* line 413, style.scss */
+/* line 423, style.scss */
 a.link:hover {
   text-decoration: none;
 }
-/* line 416, style.scss */
+/* line 426, style.scss */
 a.link:focus {
   outline: none;
 }
 
-/* line 421, style.scss */
+/* line 431, style.scss */
 .nextSectionBtn {
   cursor: pointer;
   font-weight: 300;
@@ -576,46 +587,46 @@ a.link:focus {
   -o-transition: all 300ms;
   transition: all 300ms;
 }
-/* line 422, style.scss */
+/* line 432, style.scss */
 .nextSectionBtn a {
   color: white;
 }
-/* line 442, style.scss */
+/* line 452, style.scss */
 .nextSectionBtn:hover {
   color: #505050;
 }
-/* line 446, style.scss */
+/* line 456, style.scss */
 .nextSectionBtn i {
   display: block;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 453, style.scss */
+  /* line 463, style.scss */
   .hugeTextBlock {
     padding: 20px;
   }
-  /* line 455, style.scss */
+  /* line 465, style.scss */
   .hugeTextBlock p {
     font-size: 30px;
   }
 
-  /* line 462, style.scss */
+  /* line 472, style.scss */
   section#projects #intouch-art {
     margin-top: -10px;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 475, style.scss */
+  /* line 485, style.scss */
   .x2 {
     display: block;
   }
 
-  /* line 476, style.scss */
+  /* line 486, style.scss */
   .x1 {
     display: none;
   }
 
-  /* line 478, style.scss */
+  /* line 488, style.scss */
   section#projects #intouch-art {
     background-image: url("../img/intouch-iphone5@x2.png");
   }
