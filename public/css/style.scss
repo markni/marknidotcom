@@ -419,10 +419,17 @@ a.link {
 }
 
 .nextSectionBtn {
+  a{
+	color:white;
+
+
+
+  }
+
   cursor: pointer;
   font-weight: 300;
   outline: none;
-  font-size: 20px;
+  font-size: 30px;
   color: $light-gray;
   width: 100%;
   bottom: 10px;
