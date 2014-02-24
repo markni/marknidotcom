@@ -59,7 +59,7 @@ app.directive("scroll", function ($window,$interval) {
 
 			}
 
-		},1000);
+		},100);
 		angular.element($window).bind("scroll", function () {
 //			console.log((+new Date()));
 			if (checkvisible(element[0])) {
