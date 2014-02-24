@@ -1,5 +1,6 @@
 app.controller('homeCtrl', function ($scope,$window) {
 	$scope.height = 0;
+	$scope.expanded = false;
 
 	$scope.lastjobdate = new Date().getFullYear() - 2013 ? "Last year" : "This year";
 
@@ -9,6 +10,10 @@ app.controller('homeCtrl', function ($scope,$window) {
 
 	$scope.scrollTop = function(){
 		markni.scrollTo(document.body, 0, 500) || markni.scrollTo(document.documentElement, 0, 500);
+	}
+
+	$scope.toggleExpand = function(){
+		$scope.expanded = !$scope.expanded;
 	}
 
 });
