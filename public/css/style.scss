@@ -263,6 +263,26 @@ section {
 
 	}
 
+
+	#nagi-art {
+	  opacity: 0;
+	  @include transition(opacity 1000ms);
+	  img {
+
+		width: 100%;
+		opacity: 0;
+	  }
+	  background-image: url('../img/nagi.png');
+	  background-repeat: no-repeat;
+	  background-size: 95%;
+	  background-position: 50% 0;
+
+	}
+	#nagi-art.animated {
+	  opacity: 1;
+	  margin-top: 100px;
+	}
+
 	#intouch-art {
 	  opacity: 0;
 	  @include transition(opacity 1000ms);
@@ -281,6 +301,9 @@ section {
 	  opacity: 1;
 	  margin-top: 100px;
 	}
+
+
+
 
   }
   &#experience {
@@ -487,5 +510,9 @@ a.link {
 
   section#projects #intouch-art  {
 	background-image: url('../img/intouch-iphone5@x2.png');
+  }
+
+  section#projects #nagi-art  {
+	background-image: url('../img/nagi@x2.png');
   }
 }
