@@ -1,6 +1,6 @@
 {
   "name": "markni-dot-com",
-  "version": "0.2",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "restart": "git pull && grunt && forever restart dist/markni.js",
