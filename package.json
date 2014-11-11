@@ -3,7 +3,8 @@
   "version": "0.2",
   "private": true,
   "scripts": {
-    "restart": "git pull && grunt && forever restart dist/markni.js"
+    "restart": "git pull && grunt && forever restart dist/markni.js",
+		"test":"grunt"
   },
   "dependencies": {
     "connect": "^3.3.3"
