@@ -126,11 +126,17 @@ section {
     font-family: 'Roboto', sans-serif;
 	padding-top: 0;
 	margin-top: 0;
-	margin-bottom: 30px;
+
   }
   h2 {
 	font-weight: 300;
 
+  }
+
+  h4{
+    i{
+      padding-right: 10px;
+    }
   }
 
   &#introduction {
@@ -459,14 +465,14 @@ a.link {
 
   }
 
-  &.moreBtn{
-    >div{
+  .moreBtn{
+
       border: white solid 2px;
       margin: 0 auto;
       display: inline-block;
       padding: 10px;
-    }
-    :hover{
+
+    &:hover{
           color:$orange;
           background-color: white;
     }
