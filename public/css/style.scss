@@ -1,7 +1,6 @@
 @import "compass";
 @import "mixins";
 
-
 $light-gray: rgb(244, 244, 244);
 $dark-gray: rgb(80, 80, 80);
 $dark-blue: rgb(0, 142, 215);
@@ -21,19 +20,19 @@ $cyan: #9ED4CB;
 
 @include keyframes(tada) {
   0% {
-	-webkit-transform: scale(1);
+    -webkit-transform: scale(1);
   }
   10%, 20% {
-	-webkit-transform: scale(0.9) rotate(-3deg);
+    -webkit-transform: scale(0.9) rotate(-3deg);
   }
   30%, 50%, 70%, 90% {
-	-webkit-transform: scale(1.1) rotate(3deg);
+    -webkit-transform: scale(1.1) rotate(3deg);
   }
   40%, 60%, 80% {
-	-webkit-transform: scale(1.1) rotate(-3deg);
+    -webkit-transform: scale(1.1) rotate(-3deg);
   }
   100% {
-	-webkit-transform: scale(1) rotate(0);
+    -webkit-transform: scale(1) rotate(0);
   }
 }
 
@@ -43,11 +42,10 @@ body {
 
 }
 
-p{
- font-size:18px;
+p {
+  font-size: 18px;
 
 }
-
 
 div#home {
   width: 100%;
@@ -55,19 +53,26 @@ div#home {
 
 }
 
-.ex-github a{
-  color:orange;
-  cursor: pointer;
-  text-decoration: none;
-  &:hover{
-	text-decoration: none;
-	color:$dark-gray;
-  }
-  &:active{
-	text-decoration: none;
-  }
+.ex-github{
+  margin-top: 50px;
 }
 
+.ex-github a
+{
+  font-family: "roboto",sans-serif;
+
+
+  color: $orange;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: $dark-gray;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
 
 .ex-link {
   display: inline-block;
@@ -76,294 +81,319 @@ div#home {
   cursor: pointer;
 
   a {
-	@include transition(color 500ms);
-	color:  $orange;
-	font-weight: 300;
-	font-size: 15px;
-	border: 1px solid;
+    @include transition(color 500ms);
+    color: $orange;
+    font-weight: 300;
+    font-size: 15px;
+    border: 1px solid;
 
-	display: inline-block;
-	border-radius: 5px;
-	padding: 0 5px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 5px;
 
-	text-decoration: none;
-	&:active {
-	  text-decoration: none;
-	  color: $dark-gray;
-	  @include animation(tada 1s forwards);
-	}
-	&:hover {
-	  text-decoration: none;
-	  color: $dark-gray;
+    text-decoration: none;
+    &:active {
+      text-decoration: none;
+      color: $dark-gray;
+      @include animation(tada 1s forwards);
+    }
+    &:hover {
+      text-decoration: none;
+      color: $dark-gray;
 
-
-	}
+    }
   }
 
 }
 
-.x2{display: none;}
-.x1{display: block;}
+.x2 {
+  display: none;
+}
+
+.x1 {
+  display: block;
+}
 
 section {
 
-  a{
-	color:$dark-gray;
-	text-decoration: none;
+  a {
+    color: $dark-gray;
+    text-decoration: none;
   }
-  a:hover{
-	color:$dark-gray;
-	text-decoration: none;
+  a:hover {
+    color: $dark-gray;
+    text-decoration: none;
 
   }
-  a:active{
-	text-decoration: none;
+  a:active {
+    text-decoration: none;
   }
 
   padding: 40px 0;
   h3 {
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
-	padding-top: 0;
-	margin-top: 0;
+    padding-top: 0;
+    margin-top: 0;
 
   }
   h2 {
-	font-weight: 300;
+    font-weight: 300;
 
   }
 
-  h4{
-    i{
+  h4 {
+    i {
       padding-right: 10px;
     }
   }
 
   &#introduction {
 
-	color: $fall-green;
-	em {
-	  display: inline-block;
-	  @include transition(color 200ms);
-	  color: white;
-	  font-style: normal;
-	  cursor: pointer;
-	  position: relative;
-	  &:hover {
-		color: $dark-gray;
-	  }
-	}
+    color: $fall-green;
+    em {
+      display: inline-block;
+      @include transition(color 200ms);
+      color: white;
+      font-style: normal;
+      cursor: pointer;
+      position: relative;
+      &:hover {
+        color: $dark-gray;
+      }
+    }
   }
   &#design {
-	a{color:white; text-decoration: underline}
-	h2{margin-bottom: 20px;
-	a{color:white;text-decoration: none}
-	}
-	p,h2{
-	  @include transition(all 500ms);
-	  opacity: 0;
-	}
-	p.animated,h2.animated{
-	  opacity: 1;
-	}
-	background-color: $orange;
-	color: white;
-	p {
-	  color: white;
-	  font-family: Georgia, "Times New Roman", Times, serif;
-	}
+    a {
+      color: white;
+      text-decoration: underline
+    }
+    h2 {
+      margin-bottom: 20px;
+      a {
+        color: white;
+        text-decoration: none
+      }
+    }
+    p, h2 {
+      @include transition(all 500ms);
+      opacity: 0;
+    }
+    p.animated, h2.animated {
+      opacity: 1;
+    }
+    background-color: $orange;
+    color: white;
+    p {
+      color: white;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
   }
 
   &#projects {
-	box-shadow: 0px -3px 9px rgba($dark-gray, 0.1);
-	background-color: $light-gray;
+    box-shadow: 0px -3px 9px rgba($dark-gray, 0.1);
+    background-color: $light-gray;
 
-	p {
-	  font-family: Georgia, "Times New Roman", Times, serif;
-	}
+    p {
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
 
-	em{
-	  color:black;
-	  text-decoration: none;
-	  font-style: normal;
-	  background-color: lighten($dark-gray,60%);
-	  display: inline-block;
-	  border-radius: 4px;
-	  padding: 0 5px;
-	  &:hover{
-		background-color: $dark-gray;
-		color:white;
-	  }
-	}
+    em {
+      color: black;
+      text-decoration: none;
+      font-style: normal;
+      background-color: lighten($dark-gray, 60%);
+      display: inline-block;
+      border-radius: 4px;
+      padding: 0 5px;
+      &:hover {
+        background-color: $dark-gray;
+        color: white;
+      }
+    }
 
-	.project-entry {
+    .project-entry {
 
-	  padding: 40px 0;
-	}
-	h2 {
-	  //color: white;
-	  margin-bottom: 20px;
-	}
+      padding: 40px 0;
+    }
+    h2 {
+      //color: white;
+      margin-bottom: 20px;
+    }
 
-	h3 {
-	  font-weight: 300;
-	  font-size: 40px;
-	  margin-bottom: 35px;
-	}
-	p {
-	  // color:white;
-	  color:$dark-gray;
-	}
+    h3 {
+      font-weight: 300;
+      font-size: 40px;
+      margin-bottom: 35px;
+    }
+    p {
+      // color:white;
+      color: $dark-gray;
+    }
 
-	.engage-art {
-	  @include transition(all 1000ms);
-	  position: relative;
-	  margin-top: 30px;
-	  &:hover{
-		.expand {
-		  opacity: 1;
-		}
-	  }
-	  .expand {
-		cursor: pointer;
-		color:$light-gray;
-		opacity: 0;
-		position: absolute;
-		right:20px;
-		top:0;
-		font-size: 20px ;
-		&:hover{
-		  color:$dark-gray;
-		}
-	  }
-	  &#engage-art-1 img {
-		margin-bottom: 20px;
-		margin-left: -100px;
-		&.animated {
-		  margin-left: 0px;
+    .engage-art {
+      @include transition(all 1000ms);
+      position: relative;
+      margin-top: 30px;
+      &:hover {
+        .expand {
+          opacity: 1;
+        }
+      }
+      .expand {
+        cursor: pointer;
+        color: $light-gray;
+        opacity: 0;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        font-size: 20px;
+        &:hover {
+          color: $dark-gray;
+        }
+      }
+      &#engage-art-1 img {
+        margin-bottom: 20px;
+        margin-left: -100px;
+        &.animated {
+          margin-left: 0px;
 
-		  opacity: 1;
-		}
-	  }
+          opacity: 1;
+        }
+      }
 
-	  &#engage-art-2 img  {
-		margin-left: 100px;
-		&.animated {
-		  margin-left: 0px;
+      &#engage-art-2 img {
+        margin-left: 100px;
+        &.animated {
+          margin-left: 0px;
 
-		  opacity: 1;
-		}
-	  }
+          opacity: 1;
+        }
+      }
 
-	  img {
+      img {
 
-		opacity: 1;
-		width: 100%;
-		border: 4px white solid;
-		@include transition(all 500ms ease-in);
-		&:hover{
-		    border-color:lighten($dark-gray,50%) ;
-		}
-	  }
+        opacity: 1;
+        width: 100%;
+        border: 4px white solid;
+        @include transition(all 100ms ease-in);
+        &:hover {
+          box-shadow: 1px 1px 5px;
+        }
+      }
 
+    }
 
-	}
+    #nagi-art {
+      opacity: 0;
+      @include transition(opacity 1000ms);
+      img {
 
+        width: 100%;
+        opacity: 0;
+      }
+      background-image: url('../img/nagi.png');
+      background-repeat: no-repeat;
+      background-size: 95%;
+      background-position: 50% 0;
 
-	#nagi-art {
-	  opacity: 0;
-	  @include transition(opacity 1000ms);
-	  img {
+    }
+    #nagi-art.animated {
+      opacity: 1;
+      margin-top: 100px;
+    }
 
-		width: 100%;
-		opacity: 0;
-	  }
-	  background-image: url('../img/nagi.png');
-	  background-repeat: no-repeat;
-	  background-size: 95%;
-	  background-position: 50% 0;
+    #intouch-art {
+      opacity: 0;
+      @include transition(opacity 1000ms);
+      img {
 
-	}
-	#nagi-art.animated {
-	  opacity: 1;
-	  margin-top: 100px;
-	}
+        width: 100%;
+        opacity: 0;
+      }
+      background-image: url('../img/intouch-iphone5.png');
+      background-repeat: no-repeat;
+      background-size: 95%;
+      background-position: 50% 0;
 
-	#intouch-art {
-	  opacity: 0;
-	  @include transition(opacity 1000ms);
-	  img {
+    }
+    #intouch-art.animated {
+      opacity: 1;
+      margin-top: 100px;
+    }
 
-		width: 100%;
-		opacity: 0;
-	  }
-	  background-image: url('../img/intouch-iphone5.png');
-	  background-repeat: no-repeat;
-	  background-size: 95%;
-	  background-position: 50% 0;
+    #clash-art {
 
-	}
-	#intouch-art.animated {
-	  opacity: 1;
-	  margin-top: 100px;
-	}
+      opacity: 0;
+      @include transition(opacity 1000ms);
+      img {
 
+        width: 100%;
+        border: 4px white solid;
+      }
+      //background-image: url('../img/clash@x2.png');
+      //background-repeat: no-repeat;
+      //background-size: 95%;
+      background-position: 50% 0;
+    }
+    #clash-art.animated {
+      opacity: 1;
 
-
+    }
 
   }
   &#experience {
-	box-shadow: 0px -3px 9px rgba($dark-gray, 0.1);
-	p{
-	  font-family: Georgia, "Times New Roman", Times, serif;
-	}
-	.job-entry {
-	  margin-top: 20px;
-	  .months {
-		display: none;
-	  }
+    box-shadow: 0px -3px 9px rgba($dark-gray, 0.1);
+    p {
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    .job-entry {
+      margin-top: 20px;
+      .months {
+        display: none;
+      }
 
-	  &.animated p {
-		opacity: 1;
-	  }
+      &.animated p {
+        opacity: 1;
+      }
 
-	  &:hover {
-		.period {
-		  display: none;
-		}
-		.months {
-		  display: inline;
-		}
+      &:hover {
+        .period {
+          display: none;
+        }
+        .months {
+          display: inline;
+        }
 
-	  }
-	}
-	ul {
-	  list-style: none;
-	  padding: 0;
-	}
-	.job-list {
-	  margin-top: 40px;
-	}
-	.job-duration {
-	  @include transition(all 1500ms);
-	  opacity: 0;
-	  background-color: $orange;
-	  color: white;
-	  margin-top: 5px;
-	  &.animated {
-		opacity: 1;
-	  }
+      }
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    .job-list {
+      margin-top: 40px;
+    }
+    .job-duration {
+      @include transition(all 1500ms);
+      opacity: 0;
+      background-color: $orange;
+      color: white;
+      margin-top: 5px;
+      &.animated {
+        opacity: 1;
+      }
 
-	}
+    }
 
-	.job-describ {
-	  color: $dark-gray;
-	}
-	background-color: $fall-green;
-	h2 {
-	  font-weight: 300;
-	  color: $dark-gray;
-	}
+    .job-describ {
+      color: $dark-gray;
+    }
+    background-color: $fall-green;
+    h2 {
+      font-weight: 300;
+      color: $dark-gray;
+    }
 
   }
 }
@@ -381,18 +411,18 @@ a#logo {
 
 }
 
-div.up{
-  &:hover{
-	color:$orange;
-	background-color: white;
-	border-color: white;
+div.up {
+  &:hover {
+    color: $orange;
+    background-color: white;
+    border-color: white;
   }
   cursor: pointer;
-  color:white;
+  color: white;
   font-size: 30px;
   width: 50px;
-  height:50px;
-  margin:30px auto;
+  height: 50px;
+  margin: 30px auto;
   border: 1px solid white;
   border-radius: 50%;
   text-align: center;
@@ -408,19 +438,19 @@ ul#social-links {
   padding: 0;
 
   li {
-	cursor: pointer;
-	float: left;
-	display: inline-block;
-	border: 1px solid white;
-	padding: 5px;
-	margin: 5px;
-	@include transition(all 300ms);
-	&:hover {
-	  @include animation(tada 1s forwards);
-	}
+    cursor: pointer;
+    float: left;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 5px;
+    @include transition(all 300ms);
+    &:hover {
+      @include animation(tada 1s forwards);
+    }
   }
   a {
-	color: white;
+    color: white;
 
   }
 }
@@ -435,10 +465,10 @@ ul#social-links {
   color: white;
 
   p {
-	font-size: 60px;
-	font-weight: 300;
-	line-height: 120%;
-	margin: 0;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 120%;
+    margin: 0;
 
   }
 }
@@ -447,34 +477,32 @@ a.link {
   cursor: pointer;
 
   &::-moz-focus-inner {
-	border: 0;
+    border: 0;
   }
   &:hover {
-	text-decoration: none;
+    text-decoration: none;
   }
   &:focus {
-	outline: none;
+    outline: none;
   }
 }
 
 .nextSectionBtn {
-  a{
-	color:white;
-
-
+  a {
+    color: white;
 
   }
 
-  .moreBtn{
+  .moreBtn {
 
-      border: white solid 2px;
-      margin: 0 auto;
-      display: inline-block;
-      padding: 10px;
+    border: white solid 2px;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px;
 
-    &:hover{
-          color:$orange;
-          background-color: white;
+    &:hover {
+      color: $orange;
+      background-color: white;
     }
   }
 
@@ -492,46 +520,64 @@ a.link {
   text-align: center;
   @include transition(all 300ms);
   &:hover {
-	color: $dark-gray;
+    color: $dark-gray;
 
   }
   i {
-	display: block;
+    display: block;
   }
 }
 
 //style for phones and tablets
 @media only screen and (max-width: 767px) {
   .hugeTextBlock {
-	padding: 20px;
-	p {
-	  font-size: 30px;
-	}
+    padding: 20px;
+    p {
+      font-size: 30px;
+    }
   }
 
   section {
-	&#projects {
-	  #intouch-art {
-		margin-top: -10px;
+    &#projects {
+      #intouch-art {
+        margin-top: -10px;
 
-	  }
-	}
+      }
+
+
+    }
   }
 }
 
+@media only screen and (max-width: 1199px) {
+
+
+  section {
+    &#projects {
+
+      #clash-art {
+        margin-top: 20px;
+
+      }
+    }
+  }
+}
 
 //retina display
-@media
-(-webkit-min-device-pixel-ratio: 2),
+@media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-  .x2 {display: block;}
-  .x1 {display: none;}
-
-  section#projects #intouch-art  {
-	background-image: url('../img/intouch-iphone5@x2.png');
+  .x2 {
+    display: block;
+  }
+  .x1 {
+    display: none;
   }
 
-  section#projects #nagi-art  {
-	background-image: url('../img/nagi@x2.png');
+  section#projects #intouch-art {
+    background-image: url('../img/intouch-iphone5@x2.png');
+  }
+
+  section#projects #nagi-art {
+    background-image: url('../img/nagi@x2.png');
   }
 }

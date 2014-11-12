@@ -1,5 +1,5 @@
 /*angular js preload css*/
-/* line 14, style.scss */
+/* line 13, style.scss */
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
@@ -7,154 +7,160 @@
 /* css3 animations */
 /*tada effect*/
 @-webkit-keyframes tada {
-  /* line 23, style.scss */
+  /* line 22, style.scss */
   0% {
     -webkit-transform: scale(1);
   }
 
-  /* line 26, style.scss */
+  /* line 25, style.scss */
   10%, 20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
   }
 
-  /* line 29, style.scss */
+  /* line 28, style.scss */
   30%, 50%, 70%, 90% {
     -webkit-transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 32, style.scss */
+  /* line 31, style.scss */
   40%, 60%, 80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 35, style.scss */
+  /* line 34, style.scss */
   100% {
     -webkit-transform: scale(1) rotate(0);
   }
 }
 
 @-moz-keyframes tada {
-  /* line 23, style.scss */
+  /* line 22, style.scss */
   0% {
     -webkit-transform: scale(1);
   }
 
-  /* line 26, style.scss */
+  /* line 25, style.scss */
   10%, 20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
   }
 
-  /* line 29, style.scss */
+  /* line 28, style.scss */
   30%, 50%, 70%, 90% {
     -webkit-transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 32, style.scss */
+  /* line 31, style.scss */
   40%, 60%, 80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 35, style.scss */
+  /* line 34, style.scss */
   100% {
     -webkit-transform: scale(1) rotate(0);
   }
 }
 
 @-o-keyframes tada {
-  /* line 23, style.scss */
+  /* line 22, style.scss */
   0% {
     -webkit-transform: scale(1);
   }
 
-  /* line 26, style.scss */
+  /* line 25, style.scss */
   10%, 20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
   }
 
-  /* line 29, style.scss */
+  /* line 28, style.scss */
   30%, 50%, 70%, 90% {
     -webkit-transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 32, style.scss */
+  /* line 31, style.scss */
   40%, 60%, 80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 35, style.scss */
+  /* line 34, style.scss */
   100% {
     -webkit-transform: scale(1) rotate(0);
   }
 }
 
 @keyframes tada {
-  /* line 23, style.scss */
+  /* line 22, style.scss */
   0% {
     -webkit-transform: scale(1);
   }
 
-  /* line 26, style.scss */
+  /* line 25, style.scss */
   10%, 20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
   }
 
-  /* line 29, style.scss */
+  /* line 28, style.scss */
   30%, 50%, 70%, 90% {
     -webkit-transform: scale(1.1) rotate(3deg);
   }
 
-  /* line 32, style.scss */
+  /* line 31, style.scss */
   40%, 60%, 80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
   }
 
-  /* line 35, style.scss */
+  /* line 34, style.scss */
   100% {
     -webkit-transform: scale(1) rotate(0);
   }
 }
 
-/* line 40, style.scss */
+/* line 39, style.scss */
 body {
   background-color: #ea693f;
   min-width: 320px;
 }
 
-/* line 46, style.scss */
+/* line 45, style.scss */
 p {
   font-size: 18px;
 }
 
-/* line 52, style.scss */
+/* line 50, style.scss */
 div#home {
   width: 100%;
   overflow: hidden;
 }
 
-/* line 58, style.scss */
+/* line 56, style.scss */
+.ex-github {
+  margin-top: 50px;
+}
+
+/* line 61, style.scss */
 .ex-github a {
-  color: orange;
+  font-family: "roboto",sans-serif;
+  color: #ea693f;
   cursor: pointer;
   text-decoration: none;
 }
-/* line 62, style.scss */
+/* line 68, style.scss */
 .ex-github a:hover {
   text-decoration: none;
   color: #505050;
 }
-/* line 66, style.scss */
+/* line 72, style.scss */
 .ex-github a:active {
   text-decoration: none;
 }
 
-/* line 72, style.scss */
+/* line 77, style.scss */
 .ex-link {
   display: inline-block;
   margin-top: 20px;
   margin-right: 20px;
   cursor: pointer;
 }
-/* line 78, style.scss */
+/* line 83, style.scss */
 .ex-link a {
   -webkit-transition: color 500ms;
   -moz-transition: color 500ms;
@@ -169,7 +175,7 @@ div#home {
   padding: 0 5px;
   text-decoration: none;
 }
-/* line 90, style.scss */
+/* line 95, style.scss */
 .ex-link a:active {
   text-decoration: none;
   color: #505050;
@@ -178,60 +184,60 @@ div#home {
   -o-animation: tada 1s forwards;
   animation: tada 1s forwards;
 }
-/* line 95, style.scss */
+/* line 100, style.scss */
 .ex-link a:hover {
   text-decoration: none;
   color: #505050;
 }
 
-/* line 105, style.scss */
+/* line 109, style.scss */
 .x2 {
   display: none;
 }
 
-/* line 106, style.scss */
+/* line 113, style.scss */
 .x1 {
   display: block;
 }
 
-/* line 108, style.scss */
+/* line 117, style.scss */
 section {
   padding: 40px 0;
 }
-/* line 110, style.scss */
+/* line 119, style.scss */
 section a {
   color: #505050;
   text-decoration: none;
 }
-/* line 114, style.scss */
+/* line 123, style.scss */
 section a:hover {
   color: #505050;
   text-decoration: none;
 }
-/* line 119, style.scss */
+/* line 128, style.scss */
 section a:active {
   text-decoration: none;
 }
-/* line 124, style.scss */
+/* line 133, style.scss */
 section h3 {
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   padding-top: 0;
   margin-top: 0;
 }
-/* line 131, style.scss */
+/* line 140, style.scss */
 section h2 {
   font-weight: 300;
 }
-/* line 137, style.scss */
+/* line 146, style.scss */
 section h4 i {
   padding-right: 10px;
 }
-/* line 142, style.scss */
+/* line 151, style.scss */
 section#introduction {
   color: #ebecdd;
 }
-/* line 145, style.scss */
+/* line 154, style.scss */
 section#introduction em {
   display: inline-block;
   -webkit-transition: color 200ms;
@@ -243,30 +249,30 @@ section#introduction em {
   cursor: pointer;
   position: relative;
 }
-/* line 152, style.scss */
+/* line 161, style.scss */
 section#introduction em:hover {
   color: #505050;
 }
-/* line 157, style.scss */
+/* line 166, style.scss */
 section#design {
   background-color: #ea693f;
   color: white;
 }
-/* line 158, style.scss */
+/* line 167, style.scss */
 section#design a {
   color: white;
   text-decoration: underline;
 }
-/* line 159, style.scss */
+/* line 171, style.scss */
 section#design h2 {
   margin-bottom: 20px;
 }
-/* line 160, style.scss */
+/* line 173, style.scss */
 section#design h2 a {
   color: white;
   text-decoration: none;
 }
-/* line 162, style.scss */
+/* line 178, style.scss */
 section#design p, section#design h2 {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -274,25 +280,25 @@ section#design p, section#design h2 {
   transition: all 500ms;
   opacity: 0;
 }
-/* line 166, style.scss */
+/* line 182, style.scss */
 section#design p.animated, section#design h2.animated {
   opacity: 1;
 }
-/* line 171, style.scss */
+/* line 187, style.scss */
 section#design p {
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-/* line 177, style.scss */
+/* line 193, style.scss */
 section#projects {
   box-shadow: 0px -3px 9px rgba(80, 80, 80, 0.1);
   background-color: #f4f4f4;
 }
-/* line 181, style.scss */
+/* line 197, style.scss */
 section#projects p {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-/* line 185, style.scss */
+/* line 201, style.scss */
 section#projects em {
   color: black;
   text-decoration: none;
@@ -302,30 +308,30 @@ section#projects em {
   border-radius: 4px;
   padding: 0 5px;
 }
-/* line 193, style.scss */
+/* line 209, style.scss */
 section#projects em:hover {
   background-color: #505050;
   color: white;
 }
-/* line 199, style.scss */
+/* line 215, style.scss */
 section#projects .project-entry {
   padding: 40px 0;
 }
-/* line 203, style.scss */
+/* line 219, style.scss */
 section#projects h2 {
   margin-bottom: 20px;
 }
-/* line 208, style.scss */
+/* line 224, style.scss */
 section#projects h3 {
   font-weight: 300;
   font-size: 40px;
   margin-bottom: 35px;
 }
-/* line 213, style.scss */
+/* line 229, style.scss */
 section#projects p {
   color: #505050;
 }
-/* line 218, style.scss */
+/* line 234, style.scss */
 section#projects .engage-art {
   -webkit-transition: all 1000ms;
   -moz-transition: all 1000ms;
@@ -334,11 +340,11 @@ section#projects .engage-art {
   position: relative;
   margin-top: 30px;
 }
-/* line 223, style.scss */
+/* line 239, style.scss */
 section#projects .engage-art:hover .expand {
   opacity: 1;
 }
-/* line 227, style.scss */
+/* line 243, style.scss */
 section#projects .engage-art .expand {
   cursor: pointer;
   color: #f4f4f4;
@@ -348,44 +354,44 @@ section#projects .engage-art .expand {
   top: 0;
   font-size: 20px;
 }
-/* line 235, style.scss */
+/* line 251, style.scss */
 section#projects .engage-art .expand:hover {
   color: #505050;
 }
-/* line 239, style.scss */
+/* line 255, style.scss */
 section#projects .engage-art#engage-art-1 img {
   margin-bottom: 20px;
   margin-left: -100px;
 }
-/* line 242, style.scss */
+/* line 258, style.scss */
 section#projects .engage-art#engage-art-1 img.animated {
   margin-left: 0px;
   opacity: 1;
 }
-/* line 249, style.scss */
+/* line 265, style.scss */
 section#projects .engage-art#engage-art-2 img {
   margin-left: 100px;
 }
-/* line 251, style.scss */
+/* line 267, style.scss */
 section#projects .engage-art#engage-art-2 img.animated {
   margin-left: 0px;
   opacity: 1;
 }
-/* line 258, style.scss */
+/* line 274, style.scss */
 section#projects .engage-art img {
   opacity: 1;
   width: 100%;
   border: 4px white solid;
-  -webkit-transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  -o-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
 }
-/* line 264, style.scss */
+/* line 280, style.scss */
 section#projects .engage-art img:hover {
-  border-color: #d0d0d0;
+  box-shadow: 1px 1px 5px;
 }
-/* line 273, style.scss */
+/* line 287, style.scss */
 section#projects #nagi-art {
   opacity: 0;
   -webkit-transition: opacity 1000ms;
@@ -397,17 +403,17 @@ section#projects #nagi-art {
   background-size: 95%;
   background-position: 50% 0;
 }
-/* line 276, style.scss */
+/* line 290, style.scss */
 section#projects #nagi-art img {
   width: 100%;
   opacity: 0;
 }
-/* line 287, style.scss */
+/* line 301, style.scss */
 section#projects #nagi-art.animated {
   opacity: 1;
   margin-top: 100px;
 }
-/* line 292, style.scss */
+/* line 306, style.scss */
 section#projects #intouch-art {
   opacity: 0;
   -webkit-transition: opacity 1000ms;
@@ -419,55 +425,73 @@ section#projects #intouch-art {
   background-size: 95%;
   background-position: 50% 0;
 }
-/* line 295, style.scss */
+/* line 309, style.scss */
 section#projects #intouch-art img {
   width: 100%;
   opacity: 0;
 }
-/* line 306, style.scss */
+/* line 320, style.scss */
 section#projects #intouch-art.animated {
   opacity: 1;
   margin-top: 100px;
 }
-/* line 315, style.scss */
+/* line 325, style.scss */
+section#projects #clash-art {
+  opacity: 0;
+  -webkit-transition: opacity 1000ms;
+  -moz-transition: opacity 1000ms;
+  -o-transition: opacity 1000ms;
+  transition: opacity 1000ms;
+  background-position: 50% 0;
+}
+/* line 329, style.scss */
+section#projects #clash-art img {
+  width: 100%;
+  border: 4px white solid;
+}
+/* line 339, style.scss */
+section#projects #clash-art.animated {
+  opacity: 1;
+}
+/* line 345, style.scss */
 section#experience {
   box-shadow: 0px -3px 9px rgba(80, 80, 80, 0.1);
   background-color: #ebecdd;
 }
-/* line 317, style.scss */
+/* line 347, style.scss */
 section#experience p {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-/* line 320, style.scss */
+/* line 350, style.scss */
 section#experience .job-entry {
   margin-top: 20px;
 }
-/* line 322, style.scss */
+/* line 352, style.scss */
 section#experience .job-entry .months {
   display: none;
 }
-/* line 326, style.scss */
+/* line 356, style.scss */
 section#experience .job-entry.animated p {
   opacity: 1;
 }
-/* line 331, style.scss */
+/* line 361, style.scss */
 section#experience .job-entry:hover .period {
   display: none;
 }
-/* line 334, style.scss */
+/* line 364, style.scss */
 section#experience .job-entry:hover .months {
   display: inline;
 }
-/* line 340, style.scss */
+/* line 370, style.scss */
 section#experience ul {
   list-style: none;
   padding: 0;
 }
-/* line 344, style.scss */
+/* line 374, style.scss */
 section#experience .job-list {
   margin-top: 40px;
 }
-/* line 347, style.scss */
+/* line 377, style.scss */
 section#experience .job-duration {
   -webkit-transition: all 1500ms;
   -moz-transition: all 1500ms;
@@ -478,34 +502,34 @@ section#experience .job-duration {
   color: white;
   margin-top: 5px;
 }
-/* line 353, style.scss */
+/* line 383, style.scss */
 section#experience .job-duration.animated {
   opacity: 1;
 }
-/* line 359, style.scss */
+/* line 389, style.scss */
 section#experience .job-describ {
   color: #505050;
 }
-/* line 363, style.scss */
+/* line 393, style.scss */
 section#experience h2 {
   font-weight: 300;
   color: #505050;
 }
 
-/* line 371, style.scss */
+/* line 401, style.scss */
 a#logo {
   text-decoration: none;
   font-size: 40px;
   padding: 20px;
 }
 
-/* line 378, style.scss */
+/* line 408, style.scss */
 .footer {
   background-color: #ea693f;
   min-height: 50px;
 }
 
-/* line 384, style.scss */
+/* line 414, style.scss */
 div.up {
   cursor: pointer;
   color: white;
@@ -517,14 +541,14 @@ div.up {
   border-radius: 50%;
   text-align: center;
 }
-/* line 385, style.scss */
+/* line 415, style.scss */
 div.up:hover {
   color: #ea693f;
   background-color: white;
   border-color: white;
 }
 
-/* line 401, style.scss */
+/* line 431, style.scss */
 ul#social-links {
   margin-left: auto;
   margin-right: auto;
@@ -533,7 +557,7 @@ ul#social-links {
   list-style: none;
   padding: 0;
 }
-/* line 410, style.scss */
+/* line 440, style.scss */
 ul#social-links li {
   cursor: pointer;
   float: left;
@@ -546,30 +570,30 @@ ul#social-links li {
   -o-transition: all 300ms;
   transition: all 300ms;
 }
-/* line 418, style.scss */
+/* line 448, style.scss */
 ul#social-links li:hover {
   -webkit-animation: tada 1s forwards;
   -moz-animation: tada 1s forwards;
   -o-animation: tada 1s forwards;
   animation: tada 1s forwards;
 }
-/* line 422, style.scss */
+/* line 452, style.scss */
 ul#social-links a {
   color: white;
 }
 
-/* line 428, style.scss */
+/* line 458, style.scss */
 .hugeBlock {
   position: relative;
 }
 
-/* line 432, style.scss */
+/* line 462, style.scss */
 .hugeTextBlock {
   -webkit-font-smoothing: antialiased;
   padding: 90px;
   color: white;
 }
-/* line 437, style.scss */
+/* line 467, style.scss */
 .hugeTextBlock p {
   font-size: 60px;
   font-weight: 300;
@@ -577,24 +601,24 @@ ul#social-links a {
   margin: 0;
 }
 
-/* line 446, style.scss */
+/* line 476, style.scss */
 a.link {
   cursor: pointer;
 }
-/* line 449, style.scss */
+/* line 479, style.scss */
 a.link::-moz-focus-inner {
   border: 0;
 }
-/* line 452, style.scss */
+/* line 482, style.scss */
 a.link:hover {
   text-decoration: none;
 }
-/* line 455, style.scss */
+/* line 485, style.scss */
 a.link:focus {
   outline: none;
 }
 
-/* line 460, style.scss */
+/* line 490, style.scss */
 .nextSectionBtn {
   cursor: pointer;
   font-weight: 300;
@@ -613,63 +637,69 @@ a.link:focus {
   -o-transition: all 300ms;
   transition: all 300ms;
 }
-/* line 461, style.scss */
+/* line 491, style.scss */
 .nextSectionBtn a {
   color: white;
 }
-/* line 468, style.scss */
+/* line 496, style.scss */
 .nextSectionBtn .moreBtn {
   border: white solid 2px;
   margin: 0 auto;
   display: inline-block;
   padding: 10px;
 }
-/* line 475, style.scss */
+/* line 503, style.scss */
 .nextSectionBtn .moreBtn:hover {
   color: #ea693f;
   background-color: white;
 }
-/* line 494, style.scss */
+/* line 522, style.scss */
 .nextSectionBtn:hover {
   color: #505050;
 }
-/* line 498, style.scss */
+/* line 526, style.scss */
 .nextSectionBtn i {
   display: block;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 505, style.scss */
+  /* line 533, style.scss */
   .hugeTextBlock {
     padding: 20px;
   }
-  /* line 507, style.scss */
+  /* line 535, style.scss */
   .hugeTextBlock p {
     font-size: 30px;
   }
 
-  /* line 514, style.scss */
+  /* line 542, style.scss */
   section#projects #intouch-art {
     margin-top: -10px;
   }
 }
+@media only screen and (max-width: 1199px) {
+  /* line 558, style.scss */
+  section#projects #clash-art {
+    margin-top: 20px;
+  }
+}
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 527, style.scss */
+  /* line 569, style.scss */
   .x2 {
     display: block;
   }
 
-  /* line 528, style.scss */
+  /* line 572, style.scss */
   .x1 {
     display: none;
   }
 
-  /* line 530, style.scss */
+  /* line 576, style.scss */
   section#projects #intouch-art {
     background-image: url("../img/intouch-iphone5@x2.png");
   }
 
-  /* line 534, style.scss */
+  /* line 580, style.scss */
   section#projects #nagi-art {
     background-image: url("../img/nagi@x2.png");
   }
