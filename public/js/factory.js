@@ -1,6 +1,13 @@
 var markni = {};
 markni.timeouts = [];
 
+/**
+ * scroll element to view
+ *
+ * @param element
+ * @param to
+ * @param duration
+ */
 markni.scrollTo = function(element, to, duration) {
     var start = element.scrollTop,
         change = to - start,
@@ -18,6 +25,10 @@ markni.scrollTo = function(element, to, duration) {
     animateScroll();
 };
 
+/**
+ *clear out animation stack
+ */
+
 markni.stopAnimations = function(){
     for (var i=0; i<markni.timeouts.length; i++) {
         clearTimeout(markni.timeouts[i]);
@@ -25,6 +36,11 @@ markni.stopAnimations = function(){
 };
 
 
+/**
+ * helper function to get distance from the top
+ * @param elm
+ * @returns {number}
+ */
 
 function posY(elm) {
     var test = elm, top = 0;
@@ -37,6 +53,12 @@ function posY(elm) {
     return top;
 }
 
+
+/**
+ * get viewport height
+ * @returns {number}
+ */
+
 function viewPortHeight() {
     var de = document.documentElement;
 
@@ -48,10 +70,23 @@ function viewPortHeight() {
     return 0;
 }
 
+
+/**
+ * scroll to
+ * @returns {number}
+ */
+
 function scrollY() {
     if( window.pageYOffset ) { return window.pageYOffset; }
     return Math.max(document.documentElement.scrollTop, document.body.scrollTop);
 }
+
+
+/**
+ * check if the elm is visible in view
+ * @param elm
+ * @returns {boolean}
+ */
 
 function checkvisible( elm ) {
     var vpH = viewPortHeight(), // Viewport Height
@@ -63,13 +98,16 @@ function checkvisible( elm ) {
 }
 
 
+/**
+ * Helper function to ease scroll speed
+ *
+ * @param t - current time
+ * @param b - start value
+ * @param c - change in value
+ * @param d - duration
+ * @returns {number}
+ */
 
-
-
-//t = current time
-//b = start value
-//c = change in value
-//d = duration
 Math.easeInOutQuad = function (t, b, c, d) {
     t /= d/2;
     if (t < 1) return c/2*t*t + b;

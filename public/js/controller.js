@@ -1,3 +1,6 @@
+/**
+ * home view controller
+ */
 app.controller('homeCtrl', function ($scope,$window) {
 	$scope.height = 0;
 	$scope.expanded = false;
