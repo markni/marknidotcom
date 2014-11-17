@@ -97,6 +97,13 @@ function checkvisible( elm ) {
     return (y < (vpH + st));
 }
 
+/**
+ * check if the loading from a ios browser
+ * @returns {boolean}
+ */
+function isIos(){
+    return /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+}
 
 /**
  * Helper function to ease scroll speed

@@ -42,6 +42,12 @@ app.directive('autoheight', function ($window) {
 app.directive("scroll", function ($window,$interval) {
 	return function (scope, element, attrs) {
 
+		if (isIos()) {
+			if (!angular.element(element).hasClass( 'animated' )){
+				angular.element(element).addClass('animated');
+			}
+		}
+
 		angular.element($window).bind("scroll", function () {
 //			console.log((+new Date()));
 			if (checkvisible(element[0])) {
