@@ -52,9 +52,16 @@ div#home {
   }
 }
 
-.ex-link {
-  display: inline-block;
+.ex-links{
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ex-link {
+  vertical-align: baseline;
+  float:left;
+  display: inline-block;
+
   margin-right: 20px;
   cursor: pointer;
 
@@ -586,7 +593,7 @@ a.link {
     &#projects {
 
       #clash-art {
-        margin-top: 20px;
+        margin-top: 70px;
 
       }
     }
