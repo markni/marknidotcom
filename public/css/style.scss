@@ -1,42 +1,18 @@
 @import "compass";
+
+@import "variables";
+
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+
 @import "mixins";
 
-$light-gray: rgb(244, 244, 244);
-$dark-gray: rgb(80, 80, 80);
-$dark-blue: rgb(0, 142, 215);
-$md-blue: lighten($dark-blue, 5%);
-$orange: #EA693F;
-$fall-green: #EBECDD;
-$cyan: #9ED4CB;
 
-$hero-font-size : 4.5vmax !important;
 
 /*angular js preload css*/
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
 
-/* css3 animations */
-
-/*tada effect*/
-
-@include keyframes(tada) {
-  0% {
-    -webkit-transform: scale(1);
-  }
-  10%, 20% {
-    -webkit-transform: scale(0.9) rotate(-3deg);
-  }
-  30%, 50%, 70%, 90% {
-    -webkit-transform: scale(1.1) rotate(3deg);
-  }
-  40%, 60%, 80% {
-    -webkit-transform: scale(1.1) rotate(-3deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotate(0deg);
-  }
-}
 
 body {
   background-color: $orange;
@@ -256,21 +232,19 @@ section {
       }
       &#engage-art-1 img {
         margin-bottom: 20px;
-        margin-left: -100px;
-        &.animated {
-          margin-left: 0px;
-
-          opacity: 1;
+        opacity: 0;
+        &.animated{
+          opacity:1;
         }
+
       }
 
       &#engage-art-2 img {
-        margin-left: 100px;
-        &.animated {
-          margin-left: 0px;
-
-          opacity: 1;
+        opacity: 0;
+        &.animated{
+          opacity:1;
         }
+
       }
 
       img {
@@ -279,8 +253,11 @@ section {
         width: 100%;
         border: 4px white solid;
         @include transition(all 100ms ease-in);
+        box-shadow: $box-shadow-normal;
         &:hover {
-          box-shadow: 1px 1px 5px rgba($dark-gray,0.5);
+          box-shadow: 1px 1px 15px rgba($dark-gray,0.3);
+          transform: scale(1.01);
+
         }
       }
 
@@ -313,6 +290,7 @@ section {
         width: 100%;
         opacity: 0;
       }
+
       background-image: url('../img/intouch-iphone5.png');
       background-repeat: no-repeat;
       background-size: 95%;
@@ -331,7 +309,14 @@ section {
       img {
 
         width: 100%;
-        border: 4px white solid;
+        border: 6px white solid;
+        @include transition(all 100ms ease-in);
+        box-shadow: $box-shadow-normal;
+        &:hover {
+          box-shadow: 1px 1px 15px rgba($dark-gray,0.3);
+          transform: scale(1.01);
+
+        }
       }
       //background-image: url('../img/clash@x2.png');
       //background-repeat: no-repeat;
@@ -350,22 +335,29 @@ section {
       font-family: Georgia, "Times New Roman", Times, serif;
     }
     .job-entry {
-      margin-top: 20px;
-      .months {
-        display: none;
-      }
 
+      margin-top: 20px;
+      &.education-entry{
+        margin-top: 40px;
+      }
       &.animated p {
         opacity: 1;
       }
 
+      .period{
+        padding-right: 20px;
+        &:nth-child(2){
+          background: tint($primary-color,10%);
+
+        }
+        display: block;
+      }
+
       &:hover {
-        .period {
-          display: none;
-        }
-        .months {
-          display: inline;
-        }
+//        .period {
+//          display: none;
+//        }
+
 
       }
     }
@@ -377,6 +369,8 @@ section {
       margin-top: 40px;
     }
     .job-duration {
+      box-shadow: $box-shadow-normal;
+      padding: 0;
       @include transition(all 1500ms);
       opacity: 0;
       background-color: $orange;
@@ -459,22 +453,29 @@ ul#social-links {
 
 .hugeBlock {
   position: relative;
-}
 
-.hugeTextBlock {
-  -webkit-font-smoothing: antialiased;
-  padding: 90px;
-  color: white;
+  h1{
+    font-size: $font-size-h1-large-screen;
+    font-weight: $font-weight-h1;
+  }
 
-  p {
-    font-size: 60px;
-    font-size:$hero-font-size;
-    font-weight: 300;
-    line-height: 120%;
-    margin: 0;
+  h2{
+    font-size:$font-size-h2-large-screen;
+    font-family: $font-family-bold;
+    text-transform: uppercase;
 
   }
+
+  &.hugeTextBlock {
+  -webkit-font-smoothing: antialiased;
+  padding: 15%;
+  color: white;
+
+
 }
+}
+
+
 
 a.link {
   cursor: pointer;
@@ -497,16 +498,20 @@ a.link {
   }
 
   .moreBtn {
-
+    font-family: $font-family-bold;
     border: white solid 2px;
     margin: 0 auto;
     display: inline-block;
-    padding: 10px;
-
+    padding: 10px 20px;
+    color: $orange;
+    background-color: white;
+    box-shadow: $box-shadow-normal;
+    @include transition(all 100ms ease-in);
     &:hover {
-      color: $orange;
-      background-color: white;
+      transform: scale(1.02);
+      box-shadow:$box-shadow-lifted;
     }
+
   }
 
   cursor: pointer;
@@ -531,12 +536,19 @@ a.link {
   }
 }
 
+
+
+
 //style for phones and tablets
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: $screen-tablet - 1px) {
+
   .hugeTextBlock {
     padding: 20px;
-    p {
-      font-size: 30px;
+    h1{
+      font-size: $font-size-h1-tablet;
+    }
+    h2{
+      font-size: $font-size-h2-tablet;
     }
   }
 
@@ -552,7 +564,22 @@ a.link {
   }
 }
 
-@media only screen and (max-width: 1199px) {
+//style for phones and tablets
+@media only screen and (max-width: $screen-phone - 1px) {
+
+  .hugeTextBlock {
+    h1{
+      font-size: $font-size-h2-phone;
+    }
+    h2{
+      font-size: $font-size-h2-phone;
+    }
+  }
+
+
+}
+
+@media only screen and (max-width: $screen-lg-desktop - 1px) {
 
 
   section {

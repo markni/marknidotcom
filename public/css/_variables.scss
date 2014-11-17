@@ -1,0 +1,31 @@
+$light-gray: rgb(244, 244, 244);
+$dark-gray: rgb(80, 80, 80);
+$dark-blue: rgb(0, 142, 215);
+$md-blue: lighten($dark-blue, 5%);
+$orange: #EA693F;
+$fall-green: #EBECDD;
+$cyan: #9ED4CB;
+
+$primary-color: $orange;
+
+
+
+
+//overwrite bootstrap variables
+$font-family-sans-serif:  "Lato", Helvetica, Arial, sans-serif;
+$font-family-bold: "Roboto", Helvetica, Arial, sans-serif;
+
+$font-size-h1-large-screen: 60px;
+$font-size-h2-large-screen: 40px;
+$font-weight-h1:300;
+
+$font-size-h1-tablet:30px;
+$font-size-h1-phone:30px;
+
+$font-size-h2-tablet:30px;
+$font-size-h2-phone:30px;
+
+
+
+$box-shadow-normal: 1px 1px 5px rgba($dark-gray, 0.5);
+$box-shadow-lifted: 1px 1px 15px  rgba($dark-gray, 0.3);
